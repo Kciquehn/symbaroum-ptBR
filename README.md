@@ -39,15 +39,16 @@ https://raw.githubusercontent.com/Kciquehn/symbaroum-translate-ptBR/main/module.
 
 ## Conteúdo da Tradução
 
-Atualmente o projeto contempla a tradução dos seguintes modulos:
+Atualmente o projeto contempla a tradução dos seguintes módulos:
 
 * Core Rules (Livro Básico + Guia Avançado do Jogador)
 * Monster Codex (Códice dos Monstros)
-* Adventure Colection (Coletânea de Aventuras)
+* Adventure Collection (Coletânea de Aventuras)
+* Game Master's Guide (Guia do Mestre)
 
 Todo o conteúdo está sendo traduzido manualmente, buscando preservar a terminologia e a ambientação original de Symbaroum.
 
-Pretendemos adicionar mais modulos com o tempo, porem isso dependerá de verba para adiquirirmos mais modulos. Caso queira ajudar com isso só entrar em contato.
+Pretendemos adicionar mais módulos com o tempo, porém isso dependerá de verba para adquirirmos outros módulos. Caso queira ajudar, basta entrar em contato.
 
 <br/>
 
@@ -62,31 +63,14 @@ Pretendemos adicionar mais modulos com o tempo, porem isso dependerá de verba p
 
 ## Progresso da Tradução
 
-### Core Rulebook &nbsp;&nbsp; ­­​​​​​​​​​​​​​​​![Progress](https://progress-bar.xyz/96/?width=100&style=minimal-matte)
+As métricas abaixo são baseadas em IDs e não no número de caracteres. Páginas longas e curtas possuem o mesmo peso.
 
-<br/>
+* **Core Rulebook:** 86 de 173 textos de páginas foram alterados em relação à fonte (aproximadamente 50%). Atores, itens, pastas e cenas possuem cobertura bem mais avançada.
+* **Monster Codex:** itens, pastas e tabelas possuem traduções; atores e o conteúdo textual dos 111 registros de páginas ainda precisam de revisão/tradução.
+* **Adventure Collection:** tradução em estágio inicial; a maior parte das 186 páginas continua em inglês ou sem texto substituto.
+* **Game Master's Guide:** estrutura de 9 jornais e 76 páginas preparada para o Babele; 100 de 118 ocorrências de itens incorporados nos atores reutilizam traduções verificadas do Core Rulebook. O conteúdo dos jornais ainda está majoritariamente em inglês.
 
-![Progress](https://progress-bar.xyz/100/?title=Atores&width=100&style=minimal-matte) ![Progress](https://progress-bar.xyz/100/?title=Itens&width=100&style=minimal-matte) ![Progress](https://progress-bar.xyz/81/?title=Jornais&width=100&style=minimal-matte) ![Progress](https://progress-bar.xyz/100/?title=Pastas&width=100&style=minimal-matte) ![Progress](https://progress-bar.xyz/100/?title=Cenas&width=100&style=minimal-matte)
-
-<br/><br/>
-
-### Monster Codex &nbsp;&nbsp; ![Progress](https://progress-bar.xyz/23/?width=100&style=minimal-matte)
-
-<br/>
-
-![Progress](https://progress-bar.xyz/0/?title=Atores&width=100&style=minimal-matte) ![Progress](https://progress-bar.xyz/100/?title=Itens&width=100&style=minimal-matte) ![Progress](https://progress-bar.xyz/4/?title=Jornais&width=100&style=minimal-matte) ![Progress](https://progress-bar.xyz/100/?title=Pastas&width=100&style=minimal-matte) ![Progress](https://progress-bar.xyz/100/?title=Tabelas&width=100&style=minimal-matte)
-
-<br/><br/>
-
-### Adventure Colection &nbsp;&nbsp; ![Progress](https://progress-bar.xyz/0/?width=100&style=minimal-matte)
-
-<br/>
-
-![Progress](https://progress-bar.xyz/0/?title=Atores&width=100&style=minimal-matte) ![Progress](https://progress-bar.xyz/0/?title=Itens&width=100&style=minimal-matte) ![Progress](https://progress-bar.xyz/0/?title=Jornais&width=100&style=minimal-matte) ![Progress](https://progress-bar.xyz/0/?title=Pastas&width=100&style=minimal-matte) ![Progress](https://progress-bar.xyz/0/?title=Tabelas&width=100&style=minimal-matte) ![Progress](https://progress-bar.xyz/0/?title=Cenas&width=100&style=minimal-matte)
-
-<br/><br/>
-
-O progresso da tradução está sendo contado por ids, e não por caracteres, logo a porcentagem real dos jornais pode ser menor que o exibido, pois tem jornais muito longos e jornais muito curtos. Leve apenas como uma base para entender o andamento da tradução.
+O guia em português pode ser aberto pelo link enviado no chat ao ativar o módulo pela primeira vez ou diretamente em `templates/user-guide-ptBR.html`.
 
 <br/>
 

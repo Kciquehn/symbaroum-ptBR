@@ -1,6 +1,6 @@
 {
   "id": "symbaroum-ptBR",
-  "title": "symbaroum-ptBR",
+  "title": "Symbaroum — Tradução PT-BR",
   "description": "<p>Tradução do jogo Symbaroum RPG do Foundry VTT para Português Brasileiro!</p>",
   "authors": [
     {
@@ -10,7 +10,7 @@
       "flags": {}
     }
   ],
-  "version": "1.0.16",
+  "version": "1.0.17",
   "compatibility": {
     "minimum": "13",
     "verified": "13.999"
@@ -42,5 +42,7 @@
   "manifest": "https://raw.githubusercontent.com/Kciquehn/symbaroum-translate-ptBR/main/module.json",
   "download": "https://github.com/Kciquehn/symbaroum-translate-ptBR/archive/refs/heads/main.zip",
   "url": "https://github.com/Kciquehn/symbaroum-translate-ptBR",
+  "readme": "README.md",
+  "bugs": "https://github.com/Kciquehn/symbaroum-translate-ptBR/issues",
   "flags": {}
 }

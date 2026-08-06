@@ -18,7 +18,10 @@ Hooks.once('babele.init', (babele) => {
 });
 
 Hooks.once('ready', async () => {
-  if (!game.user.isGM) return;
+  if (!game.user.isGM || game.i18n.lang !== 'pt-BR') return;
+
+  const responsibleGM = game.users.find((user) => user.active && user.isGM);
+  if (responsibleGM?.id !== game.user.id) return;
 
   const shown = game.settings.get(MODULE_ID, 'welcomeMessageShown');
 
@@ -52,6 +55,12 @@ Hooks.once('ready', async () => {
 
       <p>
         Obrigado pelo feedback e por utilizar a tradução.
+      </p>
+
+      <p>
+        <a href="modules/${MODULE_ID}/templates/user-guide-ptBR.html" target="_blank">
+          Abrir o guia do sistema em português
+        </a>
       </p>
     `
   });

@@ -1,9 +1,10 @@
 const fs = require("fs");
 
 const CORE_PATH = "compendium/pt-BR/symbaroum-corerules.symbaroum-core-rules.json";
-const MONSTER_PATH = "compendium/pt-BR/symbaroum-monstercodex.symbaroum-monster-codex.json";
-const MONSTER_ENTRY = "Symbaroum Monster Codex";
-const checkOnly = process.argv.includes("--check");
+const GMG_PATH = "compendium/pt-BR/symbaroum-gmg.symbaroum-gmg.json";
+const CORE_ENTRY = "Symbaroum Core Rules";
+const GMG_ENTRY = "Symbaroum Game Masters Guide";
+const write = process.argv.includes("--write");
 
 const TRANSLATION_FIELDS = new Set([
   "name",
@@ -27,16 +28,16 @@ const TRANSLATION_FIELDS = new Set([
 ]);
 
 const core = JSON.parse(fs.readFileSync(CORE_PATH, "utf8"));
-const monsterSource = fs.readFileSync(MONSTER_PATH, "utf8");
-const monster = JSON.parse(monsterSource);
-const coreEntry = core.entries?.["Symbaroum Core Rules"];
-const monsterEntry = monster.entries?.[MONSTER_ENTRY];
+const gmgSource = fs.readFileSync(GMG_PATH, "utf8");
+const gmg = JSON.parse(gmgSource);
+const coreEntry = core.entries?.[CORE_ENTRY];
+const gmgEntry = gmg.entries?.[GMG_ENTRY];
 
 if (!coreEntry?.items || !coreEntry?.actors) {
   throw new Error("Core Rules does not contain the expected item and actor translations.");
 }
-if (!monsterEntry?.actors) {
-  throw new Error(`Monster Codex entry '${MONSTER_ENTRY}' was not found.`);
+if (!gmgEntry?.actors) {
+  throw new Error(`GMG entry '${GMG_ENTRY}' was not found.`);
 }
 
 function locateEmbeddedItemObjects(source) {
@@ -52,14 +53,11 @@ function locateEmbeddedItemObjects(source) {
     if (source[index] !== '"') throw new Error(`Expected string at offset ${index}.`);
     index += 1;
     while (index < source.length) {
-      if (source[index] === "\\") {
-        index += 2;
-      } else if (source[index] === '"') {
+      if (source[index] === "\\") index += 2;
+      else if (source[index] === '"') {
         index += 1;
         return JSON.parse(source.slice(start, index));
-      } else {
-        index += 1;
-      }
+      } else index += 1;
     }
     throw new Error(`Unterminated string at offset ${start}.`);
   }
@@ -71,15 +69,13 @@ function locateEmbeddedItemObjects(source) {
     if (token === "{") parseObject(path);
     else if (token === "[") parseArray(path);
     else if (token === '"') parseString();
-    else {
-      while (index < source.length && !/[\s,}\]]/.test(source[index])) index += 1;
-    }
+    else while (index < source.length && !/[\s,}\]]/.test(source[index])) index += 1;
     const end = index;
     if (
       token === "{" &&
       path.length === 6 &&
       path[0] === "entries" &&
-      path[1] === MONSTER_ENTRY &&
+      path[1] === GMG_ENTRY &&
       path[2] === "actors" &&
       path[4] === "items"
     ) {
@@ -143,17 +139,19 @@ function locateEmbeddedItemObjects(source) {
 
 const normalize = (value) => value
   .normalize("NFKC")
-  .replace(/[\u2010-\u2015\u2212]/g, "-")
+  .replace(/[–—]/g, "-")
   .replace(/\s+/g, " ")
   .trim()
   .toLocaleLowerCase("en-US");
 
+const selectFields = (translation) => Object.fromEntries(
+  Object.entries(translation).filter(([field]) => TRANSLATION_FIELDS.has(field))
+);
+
 function addCandidate(target, sourceName, translation, origin) {
   const key = normalize(sourceName);
   const candidates = target.get(key) ?? [];
-  const filtered = Object.fromEntries(
-    Object.entries(translation).filter(([field]) => TRANSLATION_FIELDS.has(field))
-  );
+  const filtered = selectFields(translation);
   const signature = JSON.stringify(filtered);
   if (!candidates.some((candidate) => candidate.signature === signature)) {
     candidates.push({ sourceName, translation: filtered, origin, signature });
@@ -182,107 +180,83 @@ function findCandidateByOrigin(sourceName, origin) {
 
 const manualChoices = new Map([
   [normalize("Spear"), findCandidateByOrigin("Spear", "actor:Early Summer Elf")],
-  [normalize("Studded Leather"), findCandidateByOrigin("Studded Leather", "actor:Fortune-Hunter")]
+  [normalize("Studded Leather"), findCandidateByOrigin("Studded Leather", "actor:Fortune-Hunter")],
+  [normalize("Lucky Charm"), findCandidateByOrigin("Lucky Charm", "actor:Fortune-Hunter")]
 ]);
 
-const variantChoices = new Map();
+const aliases = new Map([
+  [normalize("Exceptionally Resolute (Grand-Master)"), { sourceName: "Exceptionally Resolute", suffix: "Grão-Mestre" }],
+  [normalize("Two-handed Force (Grand- Master)"), { sourceName: "Two-handed Force", suffix: "Grão-Mestre" }],
+  [normalize("Iron Fist (Grand-Master)"), { sourceName: "Iron Fist", suffix: "Grão-Mestre" }]
+]);
 
-function translatedVariant(baseName, suffix) {
-  const resolved = resolveTranslation(baseName);
-  if (!resolved.candidate) {
-    throw new Error(`Variant base '${baseName}' could not be resolved.`);
-  }
-  return {
-    ...resolved.candidate,
-    translation: {
-      ...resolved.candidate.translation,
-      name: `${resolved.candidate.translation.name} (${suffix})`
-    },
-    origin: `${resolved.candidate.origin}:variant`
-  };
-}
-
-for (const [sourceName, [baseName, suffix]] of [
-  ["Alternative Damage (Resolute)", ["Alternative Damage", "Resoluto"]],
-  ["Alternative Damage (Strong)", ["Alternative Damage", "Forte"]],
-  ["Beast Lore (Abominations  or Undead)", ["Beast Lore", "Abominações ou Mortos-vivos"]],
-  ["Beast Lore (Beasts)", ["Beast Lore", "Feras"]],
-  ["Beast Lore (Cultural Beings)", ["Beast Lore", "Seres Culturais"]],
-  ["Beast Lore (Varied Focus)", ["Beast Lore", "Foco Variado"]],
-  ["Contacts (Ambrian army)", ["Contacts", "Exército Ambriano"]],
-  ["Contacts (Ambrian Army)", ["Contacts", "Exército Ambriano"]],
-  ["Contacts (Criminals)", ["Contacts", "Criminosos"]],
-  ["Contacts (General)", ["Contacts", "Geral"]],
-  ["Contacts (guild)", ["Contacts", "Guilda"]],
-  ["Contacts (Neighbors)", ["Contacts", "Vizinhos"]],
-  ["Contacts (Nobles)", ["Contacts", "Nobres"]],
-  ["Contacts (Ordo Magica)", ["Contacts", "Ordo Magica"]],
-  ["Contacts (Rabble)", ["Contacts", "Plebe"]],
-  ["Contacts (Templars)", ["Contacts", "Templários"]],
-  ["Contacts (the Sun Church)", ["Contacts", "Igreja do Sol"]],
-  ["Contacts (Thieves’ Guild)", ["Contacts", "Guilda dos Ladrões"]],
-  ["Contacts (Twilight Friars)", ["Contacts", "Frades do Crepúsculo"]],
-  ["Contacts (Witches)", ["Contacts", "Bruxas"]],
-  ["Heirloom (armor)", ["Heirloom", "Armadura"]],
-  ["Heirloom (Parrying Dagger)", ["Heirloom", "Adaga de Aparar"]]
-]) {
-  variantChoices.set(normalize(sourceName), translatedVariant(baseName, suffix));
+function exactTopLevelCandidate(sourceName) {
+  const translation = coreEntry.items[sourceName];
+  if (!translation) return null;
+  return { sourceName, translation: selectFields(translation), origin: "items" };
 }
 
 function resolveTranslation(sourceName) {
-  const exactTopLevel = coreEntry.items[sourceName];
-  if (exactTopLevel) {
+  const alias = aliases.get(normalize(sourceName));
+  const lookupName = alias?.sourceName ?? sourceName;
+  const preserveAlias = (candidate) => {
+    if (!alias || !candidate) return candidate;
     return {
-      candidate: {
-        sourceName,
-        translation: Object.fromEntries(
-          Object.entries(exactTopLevel).filter(([field]) => TRANSLATION_FIELDS.has(field))
-        ),
-        origin: "items",
-      },
-      resolution: "top-level-exact"
+      ...candidate,
+      translation: {
+        ...candidate.translation,
+        name: `${candidate.translation.name} (${alias.suffix})`
+      }
     };
-  }
+  };
+  const exact = exactTopLevelCandidate(lookupName);
+  if (exact) return { candidate: preserveAlias(exact), resolution: alias ? "alias" : "exact" };
 
-  const key = normalize(sourceName);
-  if (variantChoices.has(key)) return { candidate: variantChoices.get(key), resolution: "variant" };
+  const key = normalize(lookupName);
   const topLevel = topLevelItems.get(key) ?? [];
   if (topLevel.length === 1) return { candidate: topLevel[0], resolution: "top-level" };
   if (topLevel.length > 1) return { candidate: null, resolution: "ambiguous" };
 
   const embedded = actorItems.get(key) ?? [];
-  if (embedded.length === 1) return { candidate: embedded[0], resolution: "core-actor" };
+  if (embedded.length === 1) return { candidate: preserveAlias(embedded[0]), resolution: alias ? "alias" : "core-actor" };
   if (manualChoices.has(key)) return { candidate: manualChoices.get(key), resolution: "manual" };
   return { candidate: null, resolution: embedded.length ? "ambiguous" : "unmatched" };
 }
 
-const beforeActorNames = Object.keys(monsterEntry.actors);
-const itemLocations = locateEmbeddedItemObjects(monsterSource);
+const beforeActorKeys = Object.keys(gmgEntry.actors);
 const beforeItemKeys = new Map(
-  Object.entries(monsterEntry.actors).map(([actorName, actor]) => [actorName, Object.keys(actor.items ?? {})])
+  Object.entries(gmgEntry.actors).map(([actorName, actor]) => [actorName, Object.keys(actor.items ?? {})])
 );
-const stats = { total: 0, updated: 0, unchanged: 0, unmatched: 0, ambiguous: 0, manual: 0, variant: 0 };
+const itemLocations = locateEmbeddedItemObjects(gmgSource);
+const stats = {
+  total: 0,
+  matched: 0,
+  updated: 0,
+  unchanged: 0,
+  unmatched: 0,
+  ambiguous: 0,
+  exact: 0,
+  alias: 0,
+  manual: 0,
+  "top-level": 0,
+  "core-actor": 0
+};
 const fieldCounts = new Map();
-const unresolvedNames = new Map();
+const unresolved = new Set();
 const replacements = [];
 
-for (const [actorName, actor] of Object.entries(monsterEntry.actors)) {
+for (const [actorName, actor] of Object.entries(gmgEntry.actors)) {
   for (const [itemName, item] of Object.entries(actor.items ?? {})) {
     stats.total += 1;
     const { candidate, resolution } = resolveTranslation(itemName);
     if (!candidate) {
       stats[resolution] += 1;
-      const unresolved = unresolvedNames.get(itemName) ?? { occurrences: 0, resolution, actors: [] };
-      unresolved.occurrences += 1;
-      if (unresolved.actors.length < 5 && !unresolved.actors.includes(actorName)) {
-        unresolved.actors.push(actorName);
-      }
-      unresolvedNames.set(itemName, unresolved);
+      unresolved.add(`${itemName} [${resolution}]`);
       continue;
     }
-    if (resolution === "manual") stats.manual += 1;
-    if (resolution === "variant") stats.variant += 1;
 
+    stats.matched += 1;
+    stats[resolution] += 1;
     let changed = false;
     for (const [field, value] of Object.entries(candidate.translation)) {
       if (item[field] !== value) changed = true;
@@ -290,46 +264,47 @@ for (const [actorName, actor] of Object.entries(monsterEntry.actors)) {
       fieldCounts.set(field, (fieldCounts.get(field) ?? 0) + 1);
     }
     stats[changed ? "updated" : "unchanged"] += 1;
+
     if (changed) {
       const location = itemLocations.get(`${actorName}\u0000${itemName}`);
-      if (!location) throw new Error(`Could not locate '${actorName}' item '${itemName}' in the JSON source.`);
+      if (!location) throw new Error(`Could not locate '${actorName}' item '${itemName}' in the GMG JSON.`);
       replacements.push({ ...location, actorName, itemName, value: item });
     }
   }
 }
 
-if (JSON.stringify(Object.keys(monsterEntry.actors)) !== JSON.stringify(beforeActorNames)) {
+if (JSON.stringify(Object.keys(gmgEntry.actors)) !== JSON.stringify(beforeActorKeys)) {
   throw new Error("Actor keys changed during synchronization.");
 }
 for (const [actorName, expectedKeys] of beforeItemKeys) {
-  const actualKeys = Object.keys(monsterEntry.actors[actorName].items ?? {});
+  const actualKeys = Object.keys(gmgEntry.actors[actorName].items ?? {});
   if (JSON.stringify(actualKeys) !== JSON.stringify(expectedKeys)) {
     throw new Error(`Embedded item keys changed for actor '${actorName}'.`);
   }
 }
 
-const eol = monsterSource.includes("\r\n") ? "\r\n" : "\n";
-let serialized = monsterSource;
+const eol = gmgSource.includes("\r\n") ? "\r\n" : "\n";
+let serialized = gmgSource;
 for (const replacement of replacements.sort((a, b) => b.start - a.start)) {
-  const lineStart = monsterSource.lastIndexOf("\n", replacement.start - 1) + 1;
-  const baseIndent = monsterSource.slice(lineStart, replacement.start).match(/^\s*/)?.[0] ?? "";
+  const lineStart = gmgSource.lastIndexOf("\n", replacement.start - 1) + 1;
+  const baseIndent = gmgSource.slice(lineStart, replacement.start).match(/^\s*/)?.[0] ?? "";
   const value = JSON.stringify(replacement.value, null, "\t").replaceAll("\n", `${eol}${baseIndent}`);
   serialized = serialized.slice(0, replacement.start) + value + serialized.slice(replacement.end);
 }
 
 const reparsed = JSON.parse(serialized);
-const reparsedEntry = reparsed.entries?.[MONSTER_ENTRY];
-if (!reparsedEntry || JSON.stringify(reparsedEntry.actors) !== JSON.stringify(monsterEntry.actors)) {
-  throw new Error("Serialized Monster Codex does not match the synchronized actor data.");
+const reparsedEntry = reparsed.entries?.[GMG_ENTRY];
+if (!reparsedEntry || JSON.stringify(reparsedEntry.actors) !== JSON.stringify(gmgEntry.actors)) {
+  throw new Error("Serialized GMG does not match the synchronized actor data.");
 }
-const wouldChange = serialized !== monsterSource;
-if (wouldChange && !checkOnly) fs.writeFileSync(MONSTER_PATH, serialized, "utf8");
+
+const wouldChange = serialized !== gmgSource;
+if (write && wouldChange) fs.writeFileSync(GMG_PATH, serialized, "utf8");
 
 console.log(JSON.stringify({
   ...stats,
   wouldChange,
-  checkOnly,
+  write,
   fieldsApplied: Object.fromEntries([...fieldCounts].sort()),
-  unresolvedUnique: unresolvedNames.size,
-  unresolved: Object.fromEntries([...unresolvedNames].sort(([left], [right]) => left.localeCompare(right)))
+  unresolved: [...unresolved].sort()
 }, null, 2));
