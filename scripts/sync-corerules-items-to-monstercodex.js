@@ -148,6 +148,8 @@ const normalize = (value) => value
   .trim()
   .toLocaleLowerCase("en-US");
 
+const looksLikeFoundryId = (value) => /^[A-Za-z0-9]{16}$/.test(value);
+
 function addCandidate(target, sourceName, translation, origin) {
   const key = normalize(sourceName);
   const candidates = target.get(key) ?? [];
@@ -183,6 +185,17 @@ function findCandidateByOrigin(sourceName, origin) {
 const manualChoices = new Map([
   [normalize("Spear"), findCandidateByOrigin("Spear", "actor:Early Summer Elf")],
   [normalize("Studded Leather"), findCandidateByOrigin("Studded Leather", "actor:Fortune-Hunter")]
+]);
+
+// These embedded items are keyed by Foundry IDs instead of their English source names.
+// Keep the explicit source identity so subsequent runs remain deterministic after the
+// translated `name` replaces the English value in the local Babele payload.
+const itemIdSourceNames = new Map([
+  ["OxAG6rUvJbdXOV9c", "Unnoticeable"],
+  ["hTGRDu7u7Rc2D2o7", "Unnoticeable"],
+  ["6XmNfZb9Q1WreFuW", "Sword"],
+  ["LfBYloQyC4Fp6EGN", "Sword"],
+  ["mhtiJwqz5sDmiAip", "Sword"]
 ]);
 
 const variantChoices = new Map();
@@ -261,18 +274,47 @@ const itemLocations = locateEmbeddedItemObjects(monsterSource);
 const beforeItemKeys = new Map(
   Object.entries(monsterEntry.actors).map(([actorName, actor]) => [actorName, Object.keys(actor.items ?? {})])
 );
-const stats = { total: 0, updated: 0, unchanged: 0, unmatched: 0, ambiguous: 0, manual: 0, variant: 0 };
+const stats = {
+  total: 0,
+  updated: 0,
+  unchanged: 0,
+  unmatched: 0,
+  ambiguous: 0,
+  manual: 0,
+  variant: 0,
+  itemNameFallback: 0
+};
 const fieldCounts = new Map();
 const unresolvedNames = new Map();
+const updatedItems = [];
 const replacements = [];
 
 for (const [actorName, actor] of Object.entries(monsterEntry.actors)) {
   for (const [itemName, item] of Object.entries(actor.items ?? {})) {
     stats.total += 1;
-    const { candidate, resolution } = resolveTranslation(itemName);
+    const mappedIdSourceName = itemIdSourceNames.get(itemName);
+    let matchedSourceName = mappedIdSourceName ?? itemName;
+    let { candidate, resolution } = resolveTranslation(matchedSourceName);
+
+    if (candidate && mappedIdSourceName) stats.itemNameFallback += 1;
+
+    if (!candidate && !mappedIdSourceName && looksLikeFoundryId(itemName) && typeof item.name === "string") {
+      const fallback = resolveTranslation(item.name);
+      if (fallback.candidate) {
+        ({ candidate, resolution } = fallback);
+        matchedSourceName = item.name;
+        stats.itemNameFallback += 1;
+      }
+    }
+
     if (!candidate) {
       stats[resolution] += 1;
-      const unresolved = unresolvedNames.get(itemName) ?? { occurrences: 0, resolution, actors: [] };
+      const unresolved = unresolvedNames.get(itemName) ?? {
+        occurrences: 0,
+        resolution,
+        currentName: item.name,
+        actors: []
+      };
       unresolved.occurrences += 1;
       if (unresolved.actors.length < 5 && !unresolved.actors.includes(actorName)) {
         unresolved.actors.push(actorName);
@@ -291,6 +333,7 @@ for (const [actorName, actor] of Object.entries(monsterEntry.actors)) {
     }
     stats[changed ? "updated" : "unchanged"] += 1;
     if (changed) {
+      updatedItems.push({ actorName, itemKey: itemName, matchedSourceName, resolution });
       const location = itemLocations.get(`${actorName}\u0000${itemName}`);
       if (!location) throw new Error(`Could not locate '${actorName}' item '${itemName}' in the JSON source.`);
       replacements.push({ ...location, actorName, itemName, value: item });
@@ -330,6 +373,7 @@ console.log(JSON.stringify({
   wouldChange,
   checkOnly,
   fieldsApplied: Object.fromEntries([...fieldCounts].sort()),
+  updatedItems,
   unresolvedUnique: unresolvedNames.size,
   unresolved: Object.fromEntries([...unresolvedNames].sort(([left], [right]) => left.localeCompare(right)))
 }, null, 2));

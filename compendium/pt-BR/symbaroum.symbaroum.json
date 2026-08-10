@@ -1,0 +1,47 @@
+{
+  "label": "Symbaroum System - Macros PT-BR",
+  "mapping": {
+    "macros": {
+      "command": "command"
+    }
+  },
+  "entries": {
+    "Symbaroum Macros - English": {
+      "folders": {
+        "EN - Macros": "PT-BR - Macros"
+      },
+      "macros": {
+        "Name Generator": {
+          "name": "Gerador de Nomes"
+        },
+        "Pay for re-roll": {
+          "name": "Pagar por Rerrolagem"
+        },
+        "Alternate Damage": {
+          "name": "Dano Alternativo"
+        },
+        "CRB Character Importer": {
+          "name": "Importador de Personagens do Livro Básico"
+        },
+        "Reset Temporary Corruption": {
+          "name": "Redefinir Corrupção Temporária"
+        },
+        "Roll Attribute": {
+          "name": "Rolar Atributo"
+        },
+        "Add Exp": {
+          "name": "Adicionar Experiência"
+        },
+        "Symbaroum.fr Character Importer": {
+          "name": "Importador de Personagens do Symbaroum.fr"
+        },
+        "Toggle player/monster": {
+          "name": "Alternar Jogador/Monstro"
+        },
+        "Starter Set Character Importer": {
+          "name": "Importador de Personagens da Caixa Inicial"
+        }
+      }
+    }
+  }
+}

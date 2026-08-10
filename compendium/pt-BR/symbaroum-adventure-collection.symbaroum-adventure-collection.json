@@ -713,7 +713,8 @@
           "tokenName": "Fullangra",
           "items": {
             "Xl3usm5teniAQJGS": {
-              "name": "Absolute Memory"
+              "name": "Memória Absoluta",
+              "description": "<p>O personagem deriva de uma cultura que, por tradição, não usa a escrita, mas que desenvolveu técnicas de memória para preservar e transmitir conhecimentos vitais. Ele ou ela se lembra de tudo visto ou ouvido, o que significa que o jogador pode perguntar ao Mestre de Jogo sobre os detalhes percebidos pelo personagem durante suas aventuras passadas. O Mestre de Jogo deve responder o mais completamente possível.</p>"
             },
             "t5r8bUX4n6BdAZ4y": {
               "name": "Strangler"
@@ -1350,7 +1351,8 @@
               "name": "Earth bound"
             },
             "o3lMOJdItTEYymex": {
-              "name": "Absolute Memory"
+              "name": "Memória Absoluta",
+              "description": "<p>O personagem deriva de uma cultura que, por tradição, não usa a escrita, mas que desenvolveu técnicas de memória para preservar e transmitir conhecimentos vitais. Ele ou ela se lembra de tudo visto ou ouvido, o que significa que o jogador pode perguntar ao Mestre de Jogo sobre os detalhes percebidos pelo personagem durante suas aventuras passadas. O Mestre de Jogo deve responder o mais completamente possível.</p>"
             }
           }
         },
@@ -1437,7 +1439,8 @@
               "name": "Earth bound"
             },
             "6jNy5bl2IkZK6xfl": {
-              "name": "Absolute Memory"
+              "name": "Memória Absoluta",
+              "description": "<p>O personagem deriva de uma cultura que, por tradição, não usa a escrita, mas que desenvolveu técnicas de memória para preservar e transmitir conhecimentos vitais. Ele ou ela se lembra de tudo visto ou ouvido, o que significa que o jogador pode perguntar ao Mestre de Jogo sobre os detalhes percebidos pelo personagem durante suas aventuras passadas. O Mestre de Jogo deve responder o mais completamente possível.</p>"
             }
           }
         },
@@ -2908,7 +2911,8 @@
           "name": "Bestial"
         },
         "5N0ISE0RlX2j2j9a": {
-          "name": "Absolute Memory"
+          "name": "Memória Absoluta",
+          "description": "<p>O personagem deriva de uma cultura que, por tradição, não usa a escrita, mas que desenvolveu técnicas de memória para preservar e transmitir conhecimentos vitais. Ele ou ela se lembra de tudo visto ou ouvido, o que significa que o jogador pode perguntar ao Mestre de Jogo sobre os detalhes percebidos pelo personagem durante suas aventuras passadas. O Mestre de Jogo deve responder o mais completamente possível.</p>"
         }
       },
       "tables": {

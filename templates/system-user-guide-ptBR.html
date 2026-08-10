@@ -1,0 +1,608 @@
+<div>
+    <h1 style=" margin-bottom: 6pt; color: #191813; text-align: center; font-weight: bold;">
+        Sistema Symbaroum
+        <br>
+        para
+        <br>
+        Foundry VTT
+    </h1>
+
+
+    <h1>Introdução</h1>
+    <p>
+        Este guia apresenta as principais funcionalidades do sistema Symbaroum para Foundry VTT.
+        <br>
+        Este sistema é oficial, mas foi desenvolvido, mantido e suportado inteiramente por voluntários. <br />
+        Presume-se que as pessoas que utilizam este sistema para Foundry VTT possuam os livros de regras do Symbaroum ou tenham adquirido os módulos gratuitos da Foundry para a Free League.
+    </p>
+    <br>
+    <h1>Histórico de Alterações</h1>
+    <p> Todo o histórico de alterações pode ser encontrado em <a target="_blank" href="https://raw.githubusercontent.com/pwatson100/symbaroum/refs/heads/master/Release_Notes.txt">nossas notas de atualização</a></p>
+    <h1>Criando personagens</h1>
+    <p>
+        Para criar um personagem, vá até a aba de Atores e clique em&nbsp;<em>Criar Ator.</em>&nbsp; (veja @Tour[charactersheet-tour]{Tour da Ficha (Mestre)} / @Tour[charactersheet-tour]{Tour da Ficha (Jogador)} ). Note que o tour do jogador exige que o Mestre do Jogo finalize o dele primeiro.
+        Em seguida, será solicitado o nome do ator e qual o tipo dele, podendo ser&nbsp;<em>Jogador<strong>&nbsp;</strong></em>ou&nbsp;<em>Monstro</em>.
+        Depois da seleção, será exibida a ficha do personagem, onde os detalhes podem ser preenchidos.&nbsp;
+        Campos como nome do personagem e raça podem ser definidos, assim como a quantidade de experiência que ele possui e quanto dela foi gasto em rerrolagens ou vínculo com artefatos, quanto foi gasto em habilidades e traços e, por fim, quanto ainda não foi utilizado.
+        <br><br>
+        Qualquer campo com fundo azulado não pode ser editado, pois esses valores são calculados automaticamente e o jogador não precisa alterá-los. O retrato pode ser trocado por uma imagem de preferência do jogador.
+        <br><br>
+        Ao gerar personagens, coloque o total inicial de pontos usados nas habilidades iniciais na caixa de Experiência mais à esquerda. Você também deve atualizar esse valor caso o personagem ganhe XP durante os cenários.
+
+    </p>
+    <img
+  src="modules/symbaroum-ptBR/images/image (1).png"
+  style="display:block; margin:auto;"
+>
+    <p>
+        Logo abaixo há um conjunto de abas, como Principal, Equipamentos, bio, etc., que podem ser usadas para fornecer as diversas informações necessárias.
+        <br>
+        Na aba Principal, o jogador pode preencher os detalhes dos seus atributos, quanta Vitalidade ainda possui restante e as informações relacionadas à sua corrupção.
+        Para modificar os atributos, clique na engrenagem no cabeçalho, isso abrirá a janela de atributos.
+    </p>
+    <img src="modules/symbaroum-ptBR/images/image2.png"
+    style="display: block; margin: auto;"
+    >
+    <br />
+    <img src="modules/symbaroum-ptBR/images/image3.png"
+    style="display: block; margin: auto; width: 70%;"
+    >
+
+    <p>
+        O atributo base corresponde ao atributo original e sem modificações do personagem. O campo "Mod." é usado para modificadores temporários, como dano em atributos causado por criaturas mortas-vivas. "Bônus" é utilizado para bônus vindos de itens. "Total" exibirá o atributo calculado automaticamente.
+        <br>
+        Os campos de corrupção contêm informações sobre quanta corrupção Temporária (da cena) o personagem acumulou, qualquer corrupção de longo prazo, como a adquirida ao consumir Bagas de Krusean, ou até mesmo a corrupção Permanente acumulada.
+        <br>
+        A seção de combate permite visualizar qual atributo será usado para iniciativa ou defesa.
+        Ela também contém informações sobre armaduras vestidas e armas empunhadas. Veja a seção sobre combate abaixo.
+    </p>
+    <br>
+
+    <h2>Adicionando Habilidades, Traços, Dádivas e Fardos</h2>
+    <p>
+        Observe que este Módulo de Sistema não contém os detalhes dessas habilidades, traços, dádivas e fardos, sendo recomendado que o Mestre configure tudo antecipadamente.
+        <br>
+        Existe um Compêndio de Aventuras que contém recursos em múltiplos idiomas e é recomendado para uso. Veja @Tour[acompendium-tour]{Compêndio de Aventuras do Sistema}
+        <br><br>
+        Para adicionar uma habilidade, traço, dádiva ou fardo, o jogador deve arrastá-los da seleção de Itens para a seção Habilidades &amp; Poderes da ficha do personagem.
+        <br>
+
+    <img src="modules/symbaroum-ptBR/images/image4.png"
+    style="display: block; margin: auto;"
+    >
+        <br>
+        Depois de adicionados à ficha do personagem, o jogador pode abri-los para ver mais informações sobre eles.
+        Para habilidades e traços, nenhuma experiência será descontada até que o jogador marque que aprendeu ou adquiriu a habilidade ou traço.
+        Para dádivas e fardos, a experiência é descontada de acordo com o nível, conforme detalhado no GAJ.
+        <br>
+    <img src="modules/symbaroum-ptBR/images/image6.png"
+    style="display: block; margin: auto; width: 80%;"
+    >
+        <br>
+        A ficha do personagem também exibe um resumo com um ícone clicável, o nome da habilidade e quais ações (Ativa, Passiva, etc.) o jogador pode utilizar com a habilidade ou traço. Ela utiliza duas pequenas imagens douradas, onde o escudo com raios, veja o exemplo de Acrobacias, indica que a habilidade pode ser ativada clicando no ícone. Caso possua uma pessoa com um escudo, veja Combatente de Escudo na imagem abaixo, significa que toda (ou em alguns casos a maior parte) da habilidade foi integrada diretamente a ficha do personagem.
+        <br>
+    <img src="modules/symbaroum-ptBR/images/image5.png"
+    style="display: block; margin: auto;"
+    >
+    </p>
+    <br><br>
+
+    <h1>Armas e Armaduras</h1>
+    <p>
+        Armas e armaduras pré-configuradas estão disponíveis nos compêndios de aventuras. Recomendamos que você as utilize. Basta localizar a aventura correspondente ao seu idioma na aba do Compêndio de Aventuras e selecionar "importar".
+        <br>
+        Para dar qualquer item a um personagem, você pode arrastá-lo da barra lateral para a ficha do personagem. Você também pode criar uma armadura ou arma diretamente pela aba <em>Equipamento</em> da ficha do personagem.
+        Nesta aba, há um <strong>+</strong> no cabeçalho das tabelas de armaduras e armas que, ao ser clicado, criará uma nova armadura ou arma para que seus detalhes possam ser preenchidos.
+        <br>
+    </p>
+    <img src="modules/symbaroum-ptBR/images/image7.png"
+    style="display: block; margin: auto;"
+    >
+    <h2>Armas</h2>
+    <p>
+        As armas possuem uma classe: uma mão (padrão), pesada, desarmada, curta, longa, à distância, de arremesso ou escudo.
+        <br>
+        Atributos: O atributo base padrão é "Preciso", mas você pode selecionar outro. Normalmente isso não é necessário, já que habilidades que modificam o atributo (Punho de ferro, Sexto Sentido...) farão isso automaticamente.
+        <br>
+        Existem dois campos para dano:
+        <br>
+        - Dano Base: contém o dado de dano da arma (uma mão causa 1d8, Curta é 1d6…). Você não precisa adicionar bônus passivos de habilidades, pois eles serão adicionados automaticamente depois.
+        <br>
+        - Dano bônus: este campo deve permanecer vazio e ser usado apenas para situações excepcionais, habilidades não suportadas e regras da casa.
+        <br>
+        - Uma arma com a qualidade impacto profundo, ou uma arma mágica criada para receber essa qualidade, possui +1 de dano. Esse dano não deve ser inserido no campo de bônus; basta marcar a caixa « Impacto Profundo » na aba de qualidades e o bônus será adicionado. A qualidade "maciça" também modificará o dano (quando usada por um PDM) ou as rolagens de armadura (quando usada por um PJ).
+
+        O dano calculado é exibido nas caixas abaixo do nome da arma: conforme as regras de Symbaroum, o dano do PJ é a fórmula de rolagem de dano quando a arma é empunhada por um PJ, enquanto o dano de PDM é o valor fixo utilizado quando ela é empunhada por um PDM.
+        <br>
+        O campo "Dano Alternativo" é usado para armas que causam dano em atributos (normalmente Resoluto ou Vigoroso). Armas normais devem permanecer configuradas como "Nenhum". Ao criar um monstro que causa dano alternativo, utilize as armas "Garras Espectrais (Wraith Claws)" ou "Toque Congelante (Freezing Touch)" e conceda à criatura a habilidade "Dano Alternativo". O dano da arma será automaticamente melhorado dependendo do nível dessa habilidade.
+    </p>
+    <br>
+    <h2>Armaduras</h2>
+    <p>
+        Armaduras possuem um valor base fixo de proteção (1d4, 1d6 ou 1d8). Uma armadura reforçada deve ter marcada a qualidade "Reforçada" na aba "Qualidades".
+        Outros bônus de proteção podem ser adicionados no campo "Proteção Bônus".
+        O campo "Obstrutiva" deve receber o valor de Obstrutiva da armadura. Esse valor será usado em algumas rolagens.
+        As qualidades devem ser marcadas na aba de qualidades. Apenas elas serão utilizadas pelo sistema. Qualquer outra qualidade personalizada pode ser inserida no campo "Qualidades".
+    </p>
+    <p>
+        Armaduras acumuláveis podem ser criadas para efeitos como "Escudo Abençoado", que se acumula à armadura normal. Selecione a opção "armadura acumulável" no campo base da armadura e então digite o valor adicional de proteção no campo de bônus.
+    </p>
+    <br>
+    <h2>Adicionando armas e armaduras aos personagens</h2>
+    <p>
+        Para adicionar uma armadura ou arma à ficha de um personagem, arraste-a da seleção de Itens para a seção de armaduras ou armas da aba Equipamento da ficha do personagem.
+        Monstros com o traço "Arma Natural" devem receber a arma « Arma Natural » do compêndio, e aqueles com o traço "Armadurado" devem receber a armadura "Armadurado".
+        <br>
+        Quando um Personagem Jogador ou um Personagem Não Jogador adiciona uma arma ou armadura à sua ficha, o valor de dano ou proteção é recalculado automaticamente, levando em consideração as habilidades e traços do personagem (Homem-de-Armas, Robusto…). Para armas, o atributo também é avaliado levando em conta a classe da arma.
+        A arma/armadura então aparecerá na ficha do personagem com seu valor final exibido. (valor em dados caso seja uma ficha de Personagem Jogador (ex: 1d8+1d6), valor fixo caso seja uma ficha de monstro (ex: 7))
+        <br>
+        Na aba Equipamentos da ficha, armas e armaduras possuem 3 estados representados por um pequeno ícone, que pode ser alterado clicando nele:
+        <br>
+        - Guardado (ícone de casa): o item está guardado fora do alcance imediato (na casa do personagem, em uma carga sobre uma mula...)
+        <br>
+        - Carregado (ícone de maleta): o item está embainhado ou dentro de uma mochila
+        <br>
+        - Ativo (ícone de camisa): o item está vestido (armadura) ou em mãos (arma), podendo ser usado em combate.
+    </p>
+    <img src="modules/symbaroum-ptBR/images/image8.png"
+    style="display: block; margin: auto;"
+    >
+    <p>
+        Armas ativas e a armadura ativa podem ser vistas na aba principal da ficha do personagem. Clique nelas para realizar uma rolagem (consulte a seção de combate). Armaduras e armas exibem seus valores de proteção ou dano, bem como qual atributo é utilizado e o valor alvo.
+        Apenas uma armadura não acumulável será considerada ativa por vez. Caso não exista uma armadura ativa, o sistema irá gerar uma armadura fictícia "Sem Armadura", equipada pelo personagem, com bônus passivos adicionados (robusto..).
+        Quando uma armadura acumulável é ativada, ela adicionará seu bônus de proteção à armadura ativa.
+    </p>
+    <p>
+        A aba de combate também mostra qual atributo está sendo usado para iniciativa, no formato [atributo principal de iniciativa].[Vigilante] - onde o atributo principal é Rápido, a menos que você possua uma habilidade ou traço que altere isso.
+    </p>
+    <img src="modules/symbaroum-ptBR/images/image9.png"
+    style="display: block; margin: auto;"
+    >
+    <br><br>
+    <h1>Realizando um Teste de Atributo</h1>
+    <p>
+        Symbaroum frequentemente exige que um teste seja realizado contra um atributo.
+        Os testes normalmente são indicados entre colchetes e, opcionalmente, quando é um teste contra outra pessoa, contêm o atributo utilizado como dificuldade da rolagem.&nbsp;
+    </p>
+    <br>
+    <h2>Realizando um Teste Simples de Atributo</h2>
+    <p>Para realizar um teste de atributo, o jogador clica no atributo usado para o teste. Por exemplo, se for solicitado um teste de Discreto, o jogador deve clicar no atributo Discreto.
+        <br>
+    <img src="modules/symbaroum-ptBR/images/image10.png"
+    style="display: block; margin: auto;"
+    >
+        <br>
+        Isso então abrirá a janela de diálogo do teste de atributo, veja abaixo.
+    </p>
+    <br>
+
+    <h2>Realizando um Teste Contra Atributo</h2>
+    <p>Se o teste precisar ser realizado contra um token no campo do jogador, então o jogador que realizará o teste deve selecionar o token como alvo.&nbsp;
+        Para selecionar um alvo, clique com o botão direito nele e marque o "ícone de alvo".
+        O alvo selecionado então terá setas apontando para ele, indicando que agora é um alvo do jogador.
+        <br>
+        &nbsp;<span class="img07">&nbsp;</span>&nbsp;
+        <br>
+        Depois disso, o jogador clica no atributo que deseja utilizar.
+        Isso apresentará a janela de diálogo do teste de atributo, onde ele poderá selecionar qual atributo o token usa para resistir ao teste.
+        O sistema então aplicará automaticamente quaisquer bônus ou penalidades normalmente ao teste.
+    </p>
+
+    <br>
+    <h2>A Janela de Diálogo do Teste de Atributo</h2>
+    <p>
+        A janela de rolagem é dinâmica e mostra elementos relevantes para o teste.
+        Na maioria dos testes de atributo, existem três elementos.
+        O atributo de oposição, que é o atributo do token alvo selecionado utilizado para resistir ao atributo que o jogador está rolando.
+        Por exemplo, um jogador precisa realizar um teste <em>[Persuasivo&larr;Resoluto]</em> contra um token no campo.
+        Ele selecionou o token como alvo e clicou no atributo <em>Persuasivo </em>.
+        Na janela de diálogo, o atributo selecionado aparece no título da janela, <em>Persuasivo</em>.
+        <br>
+        &nbsp;<span class="img08">&nbsp;</span>&nbsp;
+        <br>
+        O jogador então pode selecionar o atributo contra o qual o teste será realizado; no exemplo acima, é o Resoluto do alvo que será usado como atributo de oposição.
+        O segundo campo define se este é um teste normal ou se o teste é feito com favor ou desfavor.
+        Veja a explicação dos termos Favor e Desfavor mais abaixo neste documento.
+    </p>
+    O último campo é qualquer modificador personalizado que se aplique a este teste, além do atributo de oposição selecionado.
+    É importante notar que, se o atributo de oposição estiver configurado como&nbsp;<em>Personalizado</em>&nbsp;, então nenhum atributo será utilizado e quaisquer penalidades ou bônus precisarão ser inseridos neste campo.
+    <br>
+    <br><br>
+    <h1>Habilidades, Poderes e Traços</h1>
+
+
+    &nbsp;<span class="img09">&nbsp;</span>&nbsp;
+
+    <p>
+        Todas as Habilidades, Poderes Místicos e Traços estão disponíveis nos compêndios do sistema, porém vêm sem descrições.
+        Caso queira as descrições, você pode preenchê-las manualmente ou adquirir um dos módulos da Free League para o sistema Symbaroum.
+        Para adicionar qualquer um deles à ficha de um personagem ou monstro, basta arrastá-lo do compêndio para a ficha.
+        Depois, você pode indicar os níveis conhecidos por esse personagem marcando a caixa "Aprendido" nas abas Novato, Adepto e Mestre.
+        <br>
+        &nbsp;<span class="img10">&nbsp;</span>&nbsp;
+        <br>
+        Você pode criar suas próprias habilidades, mas para utilizar os recursos do sistema, será necessário usar as Habilidades, Poderes e Traços incluídos nos compêndios.&nbsp;
+    </p>
+    <br><br>
+
+    <h1>Habilidades</h1>
+    <p>
+        Algumas habilidades e traços, quando atribuídos a um personagem jogador ou não jogador, afetam diretamente a ficha e/ou as janelas de diálogo.
+    </p>
+    <h3><strong>Dominação, Façanha de Força, Finta, Dança da Adaga, Sexto Sentido, Dom Poderoso, Tático</strong></h3>
+    <p>
+        Os atributos usados para defesa e ataque serão alterados quando o personagem estiver usando as armas correspondentes.
+    </p>
+    <h3><strong>Combatente de Escudo, Luta de Cajado, Arremessar Aço, Guerreiro Natural, Arma Natural</strong></h3>
+    <p>
+        O dano da arma e/ou o valor de defesa serão modificados.
+    </p>
+    <h3><strong>Homem-de-Armas, Armadurado, Místico Blindado, Robusto, Instinto de Sobrevivência</strong></h3>
+    <p>
+        A proteção e/ou o valor de Obstrutiva da armadura serão modificados.
+    </p>
+    <h3><strong>Colossal, Morto-vivo, Forma de Espírito, Enxame</strong></h3>
+    <p>
+        Esses traços aplicam redução de dano quando a Melhoria de Combate está ativa. O dano da arma e a defesa também podem ser modificados. O bônus adicional de Luta de Cajado ao usar um bordão de madeira ou um cajado místico não é incluído automaticamente; adicione +1 de Defesa na aba de bônus da arma correspondente.
+    </p>
+    <h3><strong>Saber de Bestas, Ataque Furtivo, Colossal, Ataque Corruptivo, Façanha de Força, Instinto de Caçador, Punho de Ferro, Dança da Adaga, Guerreiro Natural, Tiro Rápido, Robusto</strong></h3>
+    <p>
+        Com a Melhoria de Combate ativa, possuir uma dessas habilidades ou traços e usar a classe de arma correta disponibiliza opções específicas na janela de ataque.
+    </p>
+    <h3><strong>Dança da Adaga, Luta de Cajado, Magia do Cajado, Espada Abençoada</strong></h3>
+    <p>
+        Essas habilidades são ativadas quando o personagem empunha armas especiais. Para que os bônus apareçam na ficha, marque as compatibilidades correspondentes na aba <em>Qualidades</em> da arma.
+    </p>
+    <br><br>
+
+    <h1>Usando Poderes</h1>
+    <p>
+        Poderes podem ser ativados clicando no ícone correspondente na ficha do personagem (veja <i>Adicionando Habilidades, Traços, Dádivas e Fardos</i>) ou abrindo o poder e clicando no dado laranja da ficha do item, como mostrado abaixo.
+        <br>
+        &nbsp;<span class="img11">&nbsp;</span>&nbsp;
+        <br>
+        Muitos poderes, habilidades e traços possuem automação. Usar um deles dessa forma calcula dano ou cura, Corrupção gerada e outros efeitos sobre o alvo.
+        <br><br>
+        <strong>Poderes:</strong><br>
+        Anátema, Escudo Abençoado, Cascata de Enxofre, Dobrar Vontade, Raio Negro, Confusão, Maldição, Arma Dançante, Disparo Terreno, Vinhas Emaranhadoras, Aura Sagrada, Herdar Ferimento, Fervilhar Larvar, Imposição de Mãos, Levitação, Maltransformação, Luz Ardente de Prios, Golpe de Regresso, Espíritos Atormentadores, Imperceptível e Martelo Bruxo.
+        <br>
+        <strong>Habilidades:</strong><br>
+        Alquimia, Acrobacias, Amoque, Dominação, Líder, Mestre do Saber, Médico, Veneficista, Saque Rápido, Recuperação e Visão de Bruxa.
+        <br>
+        <strong>Traços:</strong><br>
+        Venenoso, Regeneração, Metamorfo e Sabedoria das Eras.
+        <br><br>
+        Ao ativar um poder, o sistema considera habilidades relevantes do personagem e do alvo, como Líder, Reflexos Rápidos, Inabalável, tradições místicas e armaduras obstrutivas. Uma janela é aberta para o jogador responsável pela ação:
+        <br>
+        &nbsp;<span class="img12">&nbsp;</span>&nbsp;
+        <br>
+    </p>
+    <ul>
+        <li><strong>Modificador manual:</strong> qualquer modificador adicional para a rolagem.</li>
+        <li><strong>Favor/Desfavor:</strong> veja a seção correspondente deste guia.</li>
+        <li><strong>Primeiro uso ou Mantido:</strong> use <em>Primeiro uso</em> na primeira rodada e <em>Mantido</em> nas rodadas seguintes ou em conjurações encadeadas, quando aplicável. O primeiro uso gera Corrupção para o místico; manter o poder não gera nova Corrupção.</li>
+    </ul>
+    <p>
+        Na maioria das situações, as opções padrão podem ser mantidas. A rolagem é realizada e seu resultado aparece no chat.
+        <br>
+        &nbsp;<span class="img14">&nbsp;</span>&nbsp;
+        <br>
+        A Corrupção é calculada considerando os níveis relevantes em Teurgia, Magia, Bruxaria, Bênçãos e Feitiçaria.
+        <br>
+        Se o resultado produzir efeitos sobre um token — dano, cura, Corrupção ou condições, por exemplo — o Mestre recebe no chat o botão <strong>Aplicar Efeitos</strong>.
+        <br>
+        &nbsp;<span class="img15">&nbsp;</span>&nbsp;
+        <br>
+        Ao clicar no botão, os efeitos são aplicados automaticamente aos tokens: dano é subtraído da Vitalidade, Corrupção Temporária é adicionada e assim por diante.
+        <br>
+        Para aplicar um poder encadeado a vários alvos, use o poder em cada um deles e marque <em>Mantido</em> depois do primeiro alvo.
+    </p>
+    <h2>Detalhes de poderes e habilidades</h2>
+    <h3><strong>Anátema</strong></h3>
+    <p>Anátema pode ser usado com ou sem um alvo. O alvo selecionado deve ser o místico adversário.</p>
+    <h3><strong>Amoque</strong></h3>
+    <p>Ao usar a habilidade, o sistema modifica automaticamente os valores de combate do personagem, incluindo armadura, defesa e dano. Use a habilidade novamente para retornar aos valores normais.</p>
+    <h3><strong>Cascata de Enxofre</strong></h3>
+    <p>Para atingir vários alvos, use o poder uma vez contra cada alvo. Depois do primeiro, selecione a opção <em>Mantido</em> para que o místico não receba Corrupção novamente.</p>
+    <h3><strong>Escudo Abençoado</strong></h3>
+    <p>Nos níveis Adepto e Mestre, selecione previamente os outros personagens que receberão o poder. Em caso de sucesso, o místico e os alvos recebem automaticamente uma armadura acumulável ativa chamada Escudo Abençoado. Quando o poder terminar, exclua esse item dos inventários.</p>
+    <h3><strong>Arma Dançante</strong></h3>
+    <p>Ao usar o poder, o personagem entra no modo Arma Dançante: os atributos de Defesa e das armas corpo a corpo passam a usar Resoluto, ou Persuasivo quando aplicável. Use o poder novamente para encerrar o modo. A ativação não gera Corrupção automaticamente; registre-a manualmente.</p>
+    <h3><strong>Vinhas Emaranhadoras</strong></h3>
+    <p>A rolagem deve sempre ser iniciada pelo místico. A partir da segunda rodada, o valor de resistência utiliza o atributo Vigoroso do alvo, conforme as regras.</p>
+    <h3><strong>Herdar Ferimento</strong></h3>
+    <p>O alvo é curado e o dano correspondente é aplicado ao místico. Com a Melhoria de Combate ativa, nos níveis Adepto e Mestre, os efeitos de veneno e sangramento também são transferidos do alvo para o místico.</p>
+    <h3><strong>Levitação</strong></h3>
+    <p>Sem um alvo selecionado, o poder é usado sobre o próprio místico. Nos níveis Adepto e Mestre, selecione um alvo para aplicar o poder sobre ele.</p>
+    <h3><strong>Líder</strong></h3>
+    <p>Usar Líder ativa o efeito de nível Adepto: o alvo recebe a condição <em>Marcado</em>. Ataques contra esse alvo recebem +1d4 de dano, ou +2 quando realizados por um PDM. Remova a condição do token quando o efeito terminar.</p>
+    <br><br>
+
+    <h1>Combate</h1>
+    <p>O sistema oferece duas formas de conduzir o combate.</p>
+
+    <h2>Combate padrão</h2>
+    <p>
+        O combate padrão funciona de maneira semelhante aos demais testes de atributo. Com base em suas habilidades e traços, o personagem define quais atributos usa para Iniciativa, Defesa e ataque. O atributo de ataque é configurado na arma, pois armas diferentes podem usar atributos diferentes.
+    </p>
+    <h3><strong>Realizando um ataque</strong></h3>
+    <p>
+        Para atacar, clique na arma equipada exibida na aba principal da ficha ou clique com o botão direito em uma arma ativa e escolha <strong>Atacar</strong>.
+        <br>
+        &nbsp;<span class="img16">&nbsp;</span>&nbsp;
+        <br>
+        A janela de teste de atributo será exibida. Nela, escolha um atributo de oposição ou, como é mais comum em combate, a <em>Defesa</em> do alvo.
+        <br>
+        &nbsp;<span class="img17">&nbsp;</span>&nbsp;
+        <br>
+        Além dos campos normais, o jogador pode indicar que o ataque possui <em>Favor</em> e adicionar bônus de dano que não sejam provenientes do Favor ou da arma, como Ataque Furtivo.
+        O resultado aparece no chat e pode ser aplicado ao token no campo de batalha.
+        <br>
+        &nbsp;<span class="img18">&nbsp;</span>&nbsp;
+    </p>
+    <h3><strong>Defendendo-se de um ataque</strong></h3>
+    <p>
+        Para realizar um teste de Defesa, clique na armadura equipada na aba principal ou clique com o botão direito em uma armadura ativa e escolha <strong>Defender</strong>.
+        A janela também permite indicar se o atacante possui Favor, o que significa que o defensor está em Desfavor.
+        <br>
+        &nbsp;<span class="img19">&nbsp;</span>&nbsp;
+        <br>
+        Se a Defesa falhar, o sistema rola automaticamente a proteção da armadura e mostra o resultado no chat.
+        <br>
+        &nbsp;<span class="img20">&nbsp;</span>&nbsp;
+        <br>
+        No exemplo acima, Abesina falhou no teste de Defesa e suas vestes a protegeram de 2 pontos de dano.
+    </p>
+    <br><br>
+
+    <h2>Melhoria de Combate</h2>
+    <p>
+        A Melhoria de Combate, também chamada de Combate Aprimorado, pode ser ativada nas configurações do sistema. Seu objetivo é acelerar o combate, reduzir a necessidade de jogadores e Mestre abrirem fichas e simplificar o gerenciamento de PDMs.
+    </p>
+    <p>Seus principais recursos são:</p>
+    <ul>
+        <li>Processar ataques considerando habilidades, traços e itens relevantes do atacante e do defensor.</li>
+        <li>Calcular automaticamente dano, Corrupção, condições e Dano Alternativo, aplicando o resultado ao alvo.</li>
+        <li>Permitir que múltiplos ataques sejam processados com um único clique.</li>
+    </ul>
+    <p>
+        Com a Melhoria de Combate e o módulo Token Action HUD, o Mestre pode conduzir um combate sem abrir as fichas. Isso reduz consultas e cálculos, permitindo maior atenção à narrativa, às descrições e à interpretação.
+    </p>
+    <p>
+        <a href="https://youtu.be/P615_E_GpLQ">Este vídeo curto</a> demonstra como utilizar os recursos da Melhoria de Combate.
+    </p>
+    <br><br>
+    <p>
+        Armaduras e armas precisam estar ativas nas fichas dos PJs e PDMs para serem consideradas. O sistema processa automaticamente os atributos, traços e habilidades do atacante e do alvo, realiza a rolagem e calcula o dano.
+        <br><br>
+        O atributo de ataque deve ser definido na ficha da arma, enquanto o atributo de Defesa deve ser escolhido na ficha do personagem. Os valores de dano e proteção de PJs e PDMs devem ser inseridos como dados; por exemplo, uma espada causa 1d8. Quando um PDM atacar um PJ, o sistema converte automaticamente esse valor para 4.
+        <br><br>
+        Quando um PJ atacar um PDM, o jogador deverá selecionar o alvo e clicar em uma arma. Quando um PDM atacar um PJ, o Mestre selecionará o alvo e clicará na arma do PDM.
+        <br><br>
+        Uma janela perguntará quais habilidades ativas ou contextuais do atacante serão utilizadas, como Punho de Ferro ou Instinto de Caçador.
+        <br>
+        &nbsp;<span class="img21">&nbsp;</span>&nbsp;
+        <br>
+        Em seguida, o ataque é rolado. Se acertar, o dano também é rolado e o resultado aparece no chat. Embora seja sempre o atacante que inicia a ação e escolhe suas habilidades, a rolagem é feita da perspectiva do jogador:
+    </p>
+    <ul>
+        <li><strong>PJ contra PDM:</strong> rola-se o ataque modificado pela Defesa. Em caso de sucesso, o dano é rolado e a proteção fixa é subtraída.</li>
+        <li><strong>PDM contra PJ:</strong> rola-se a Defesa modificada pelo ataque. Em caso de falha, a proteção é rolada e subtraída do dano fixo.</li>
+        <li><strong>PDM contra PDM ou PJ contra PJ:</strong> rola-se o ataque modificado pela Defesa. Em caso de sucesso, o dano é rolado e a proteção fixa é subtraída.</li>
+    </ul>
+    <p>
+        &nbsp;<span class="img22">&nbsp;</span>&nbsp;
+        <br>
+        O Mestre recebe então uma mensagem no chat com um botão.
+        <br>
+        &nbsp;<span class="img15">&nbsp;</span>&nbsp;
+        <br>
+        Ao clicar no botão, os resultados são aplicados automaticamente aos tokens: o dano é subtraído da Vitalidade e condições como veneno e sangramento são adicionadas. Recomenda-se o uso de um módulo de contadores de condições para exibir a duração desses efeitos sobre o token e no rastreador de combate.
+        <br><br>
+        Os traços Morto-vivo, Forma de Espírito e Enxame aplicam redução de dano. Uma arma marcada como Artefato é tratada automaticamente como mística. Se uma arma for mística por outro motivo, marque a qualidade <em>Mística</em> para que o dano seja calculado corretamente.
+        <br><br>
+        Dano Alternativo reduz o atributo correspondente por meio do campo <em>Mod.</em> da janela de atributos.
+        <br><br>
+        Dano contínuo, como veneno, sangramento ou fogo, é calculado, mas não é aplicado automaticamente. Ajuste a Vitalidade manualmente; o sistema adiciona apenas a condição correspondente ao token.
+    </p>
+    <br><br>
+
+    <h1>Iniciativa</h1>
+    <p>
+        A iniciativa do sistema Symbaroum para Foundry VTT segue a ordem descrita no livro, usando a seguinte fórmula para integração com o Foundry:
+        <br>
+        <code>iniciativa = Rápido + Vigilante × 0,01</code>
+        <br>
+        Essa fórmula gera a mesma ordem das regras. Uma iniciativa 15,10 significa <em>Rápido</em> 15 e <em>Vigilante</em> 10. O atributo principal pode ser alterado na ficha para personagens com Tático, por exemplo.
+    </p>
+
+    <h1>Favor e Desfavor</h1>
+    <p>
+        Os termos <em>Favor</em> e <em>Desfavor</em> nas janelas indicam situações em que o personagem rola dois dados. Com Favor, mantém o melhor resultado, como em Instinto de Caçador ou certas resistências de Inabalável. Com Desfavor, mantém o pior resultado, como pode ocorrer com Maldição ou Pária.
+    </p>
+
+    <h1>Bônus</h1>
+    <p>
+        Todos os itens podem receber diferentes bônus configuráveis. O Mestre pode usá-los para conceder bônus ou penalidades em atributos, aumentar ou reduzir Vitalidade e alterar valores de Corrupção.
+        Eles também podem reduzir o custo em Experiência de algo ou conceder Experiência disponível sem alterar o total recebido pelo personagem.
+        Ao abrir um item, sua seção de bônus permite modificar esse comportamento.
+        <br>
+        &nbsp;<span class="img23">&nbsp;</span>&nbsp;
+        <br>
+        Poderes e habilidades concedem seus bônus assim que são adicionados à ficha. Bônus de armaduras, armas e equipamentos só são concedidos quando o item está ativo. Quando um item altera um atributo, o bônus é incluído no valor <em>Total</em> e listado na dica correspondente.
+        <br>
+        O exemplo abaixo mostra um personagem com o atributo excepcional Vigilante no nível Novato e Vigilante base 15:
+        <br>
+        &nbsp;<span class="img13">&nbsp;</span>&nbsp;
+        <br>
+    </p>
+
+    <h1>Testes de Morte e recuperação</h1>
+    <p>
+        Quando um personagem precisa realizar um Teste de Morte ou tentar se recuperar, os dois botões no topo da ficha fazem as rolagens automaticamente.
+        <br>
+        &nbsp;<span class="img29">&nbsp;</span>&nbsp;
+        <br>
+        Se o Teste de Morte precisar de um modificador, como ao usar uma Trança da Bruxa do Guia Avançado do Jogador, mantenha <kbd>Shift</kbd> pressionado ao clicar no botão para abrir a janela de modificadores.
+        <br>
+        &nbsp;<span class="img28">&nbsp;</span>&nbsp;
+        <br>
+        Depois de uma ou mais falhas, crânios aparecem sobre o retrato: um para a primeira falha, dois para a segunda e três para a falha final. Eles são removidos assim que o personagem se recupera.
+    </p>
+
+    <h1>Enriquecedores de Texto</h1>
+    <p>
+        O sistema possui três enriquecedores de texto: <code>@Tour</code>, <code>@SymbaroumActor</code> e <code>@fas</code>.
+        <br>
+        <code>@Tour</code> exige o ID do tour entre colchetes <code>[]</code>, seguido do nome exibido entre chaves <code>{}</code>.
+        <br>
+        <code>@SymbaroumActor</code> exige o nome do ator entre colchetes <code>[]</code>. Opcionalmente, pode receber um nome exibido entre chaves <code>{}</code> e uma lista de habilidades integradas separadas por vírgulas.
+        <br>
+        <code>@fas</code> permite inserir ícones Font Awesome em journals ou fichas de personagens.
+    </p>
+
+    <h1>Configurações do Sistema</h1>
+    <p>
+        O sistema possui as configurações abaixo. Consulte também @Tour[settings-tour]{Guia de configuração de Symbaroum}. Cada opção pode ser ativada ou desativada conforme as necessidades de sua campanha.
+        <br><br>
+        <b>Configurar Ajustes de Symbaroum</b><br>
+        Configuração individual que permite alterar fundos e cores das fichas. Veja a seção seguinte.
+        <br>
+        <b>Versão do Modelo do Mundo</b><br>
+        Função destinada aos desenvolvedores. Não altere esse valor sem saber exatamente por que isso é necessário.
+        <br>
+        <b>Versão do Sistema do Mundo</b><br>
+        Função destinada aos desenvolvedores. Não altere esse valor sem saber exatamente por que isso é necessário.
+        <br>
+        <b>Melhoria de Combate</b><br>
+        Ativa ou desativa a automação de combate. Quando estiver ativa, o funcionamento do combate muda e os jogadores deixam de rolar a própria Defesa.
+        <br>
+        <b>Botão de rolagem de resistência</b><br>
+        Quando PDMs utilizam poderes resistíveis ou atacam com a Melhoria de Combate, cria no chat do jogador um botão que ele deverá clicar para realizar a rolagem de resistência, em vez de o sistema rolá-la imediatamente.
+        <br>
+        <b>Sempre capaz de suceder ou falhar</b><br>
+        Faz com que uma rolagem 1 sempre seja um sucesso e uma rolagem 20 sempre seja uma falha.
+        <br>
+        <b>Rolagens de Críticos Opcionais</b><br>
+        Ativa as rolagens críticas normais descritas na regra opcional do Livro Básico.
+        <br>
+        <b>Rolagens de Críticos Raros Opcionais</b><br>
+        Ativa a versão mais rara das rolagens críticas descrita na regra opcional do Livro Básico.
+        <br>
+        <b>Permitir críticos fora de combate</b><br>
+        Permite que o sistema mostre mensagens de sucesso ou falha crítica em testes normais de atributo, usando a mesma proporção do combate.
+        <br>
+        <b>Configurações de combate para rolagens</b><br>
+        Mantém modificadores entre ataques e defesas, oferecendo maior praticidade durante o combate.
+        <br>
+        <b>Configurações de atributo para rolagens</b><br>
+        Mantém modificadores entre determinadas rolagens de atributo.
+        <br>
+        <b>Mostrar modificadores em rolagens de atributo alvo</b><br>
+        Mostra nas rolagens de atributo e de combate o modificador produzido pelo atributo de oposição.
+        <br>
+        <b>Mostrar modificadores de PDMs</b><br>
+        Exibe fichas de PDMs e monstros no formato do Livro Básico, com modificadores entre +5 e −5.
+        <br>
+        <b>Mostrar múltiplos ataques na caixa de armas para PDMs</b><br>
+        O sistema tenta mostrar quantos ataques um PDM pode realizar. Como não sabe qual é a arma principal, o Mestre pode precisar ajustar qual arma recebe bônus, como em Ataque Duplo no nível Mestre. O formato é:
+    </p>
+    <ul>
+        <li>Ataques únicos que impedem ataques múltiplos são seguidos por uma vírgula.</li>
+        <li>Os danos possíveis de cada ataque com a arma são separados por uma barra.</li>
+    </ul>
+    <p>
+        Devido a essas limitações, o Mestre deverá avaliar qual ataque utiliza cada valor.
+        <br>
+        <b>Permitir modificação de referência</b><br>
+        Visível apenas para o Mestre. Mostra um campo de referência em habilidades, traços e outros itens. Essa referência é usada pelas automações do sistema.
+        <br>
+        <b>Suprimir rolagens de Iniciativa</b><br>
+        Symbaroum não usa uma rolagem comum de Iniciativa, mas o sistema precisa realizá-la para desempates. Esta opção apenas oculta a rolagem no chat.
+        <br>
+        <b>Selecionar manualmente atributo de iniciativa</b><br>
+        Permite escolher manualmente o atributo principal usado para Iniciativa.
+        <br>
+        <b>Adicionar botão de Ajustes de Symbaroum</b><br>
+        Adiciona um botão de ajustes de Symbaroum à barra lateral de Configurações do Foundry.
+    </p>
+    <br>
+
+    <h2>Configurar Ajustes de Symbaroum</h2>
+    <p>
+        A barra lateral de configurações contém o botão <strong>Configurar Ajustes de Symbaroum</strong>, visível para todos os usuários.
+        <br>
+        &nbsp;<span class="config-button">&nbsp;</span>&nbsp;
+        <br>
+        Cada usuário pode alterar os fundos das fichas de PJ e PDM, além das cores de títulos e campos editáveis ou não editáveis.
+        <br>
+        &nbsp;<span class="configuration-settings">&nbsp;</span>&nbsp;
+        <br>
+        Selecionar <strong>Seletor de Cor Simples</strong> em um dos menus abre uma caixa para escolher a cor daquele elemento. Ao clicar nela, aparece um seletor no qual é possível ajustar cor e luminosidade.
+        <br>
+        &nbsp;<span class="configuration-settings-cp">&nbsp;</span>&nbsp;
+        <br>
+        Depois de escolher, clique em <strong>Enviar</strong> para aplicar. Caso não goste do resultado, os botões de redefinição restauram os valores padrão.
+        <br><br>
+        Opções de fundo:
+    </p>
+    <div class="imagecontainer">
+        <img src="/systems/symbaroum/asset/image/system-guide/artboard_4.webp" style="width:70%; margin-left: 15%;">
+    </div>
+
+    <br>
+    <h1>Macros</h1>
+    <p>
+        O sistema inclui algumas macros que podem ser úteis durante as sessões.
+        <br><br>
+        <b>Adicionar experiência (Add Exp)</b><br>
+        Permite ao Mestre adicionar Experiência ao grupo. Selecione tokens ou, caso nenhum esteja selecionado, escolha personagens jogadores no diretório de Atores.
+        <br>
+        <b>Dano Alternativo (Alternate Damage)</b><br>
+        Aplica Dano Alternativo a um token.
+        <br>
+        <b>Gerador de nomes (Name Generator)</b><br>
+        Gera e publica dez nomes no estilo de Symbaroum conforme a cultura escolhida: ambriana, bárbara, simbárica, humana sequestrada, anã, élfica, goblin ou troll, com as variações disponíveis para cada cultura.
+        <br>
+        <b>Importador de personagens do Livro Básico (CRB Character Importer)</b><br>
+        Importa PJs, PDMs e monstros do Livro Básico, de várias aventuras e do Códice de Monstros por meio de copiar e colar. Depois da importação, confira as habilidades e equipe os itens do personagem. Consulte as instruções da própria macro.
+        <br>
+        <b>Importador de personagens da Caixa Inicial (Starter Set Character Importer)</b><br>
+        Importa PJs, PDMs e monstros da Caixa Inicial e da Coletânea de Aventuras por meio de copiar e colar. Depois da importação, confira as habilidades e equipe os itens do personagem. Consulte as instruções da própria macro.
+        <br>
+        <b>Importador de personagens do Symbaroum.fr (Symbaroum.fr Character Importer)</b><br>
+        Importa PJs, PDMs e monstros do site Symbaroum.fr. Exporte o JSON do personagem, abra-o e copie todo o conteúdo para a macro. Depois, confira as habilidades e equipe os itens.
+        <br>
+        <b>Pagar rerrolagem (Pay for re-roll)</b><br>
+        Usa as regras alternativas para pagar uma rerrolagem com Experiência ou Corrupção Permanente. O jogador escolhe um personagem que controla ou utiliza o token selecionado. A macro paga apenas o custo; ela não realiza uma nova rolagem.
+        <br>
+        <b>Redefinir Corrupção Temporária (Reset temporary corruption)</b><br>
+        Permite ao Mestre zerar a Corrupção Temporária do token selecionado ou, quando não houver tokens selecionados, de qualquer quantidade de personagens jogadores no diretório de Atores.
+        <br>
+        <b>Rolar atributo (Roll attribute)</b><br>
+        Permite escolher um personagem e um atributo para realizar o teste sem abrir a ficha.
+        <br>
+        <b>Alternar jogador/monstro (Toggle player/monster)</b><br>
+        Alterna um ator do diretório entre os tipos jogador e monstro.
+    </p>
+    <br><br>
+
+    <h1>Agradecimentos</h1>
+    <p>
+        Os desenvolvedores do sistema Symbaroum para Foundry agradecem a todas as pessoas que contribuem com o projeto, incluindo quem trabalha nas traduções dos idiomas disponíveis:
+    </p>
+    <ul>
+        <li>Francês — Khaali</li>
+        <li>Alemão — DasTorfu, Padraig359</li>
+        <li>Espanhol — kufferino</li>
+        <li>Italiano — Surcof</li>
+        <li>Sueco — Weymyss, Krister Persson</li>
+    </ul>
+    <p>As artes usadas como fundos das fichas foram criadas por AshesToAshe (AshesForAshe#6498).</p>
+    <br><br>
+
+    <h1>Módulos compatíveis</h1>
+    <p><a href="https://foundryvtt.com/packages/dice-so-nice/">Dice So Nice!</a></p>
+    <p><a href="https://foundryvtt.com/packages/token-action-hud/">Token Action HUD</a></p>
+    <p>O Token Action HUD pode apresentar um problema com <em>Sem Armadura</em>. Como solução, crie uma armadura do tipo pele.</p>
+</div>

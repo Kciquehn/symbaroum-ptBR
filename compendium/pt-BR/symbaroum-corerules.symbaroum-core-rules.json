@@ -4054,7 +4054,7 @@
           "description": "<p>A criatura ou pessoa se move a uma velocidade anormalmente alta. Em situações em que a precisão conta, o movimento é de 13 metros por turno. E em conexão com a regra de Perseguição: Fuga  & Caça (página 104), a dádiva concede +3 de bônus em Rápido.</p>"
         },
         "Forbidden Knowledge": {
-          "name": "Conehcimento Proibido",
+          "name": "Conhecimento Proibido",
           "description": "<p>O personagem de alguma forma chegou a possuir os segredos das tradições místicas em relação a alquimia e criação de artefatos; talvez como resultado de espionagem ou depois de ter servido um Mestre muito viajado. Com as habilidades Alquimia e Criar Artefatos, ele ou ela tem a capacidade de criar todos os elixires e artefatos, incluindo aqueles que pertencem aos segredos de outras tradições.</p>"
         },
         "Gambler": {
@@ -5003,7 +5003,7 @@
           "cost": "50 táleres"
         },
         "Lance (on Horse)": {
-          "name": "Lance (a cavalo)",
+          "name": "Lança (a cavalo)",
           "description": "<p>O valor da lança de cavalaria não deve ser subestimado — as maiores monstruosidades dos Lordes Negros eram frequentemente mortas por lanças nas mãos de bravos cavaleiros. A arma também foi usada pela cavalaria ambriana para ganhar domínio sobre as planícies e conduzir bárbaros, grupos de predadores e abominações na Davokar.</p> <p>A lança de cavalaria é uma haste alongada, com um punho e um cabo adaptados para uso a cavalo. Ao montar um cavalo, a lança tem a qualidade Longa, mesmo que agarrada em uma mão. A pé, a lança é muito longa para ser manejada com apenas uma mão.</p>",
           "cost": "15 táleres"
         },
