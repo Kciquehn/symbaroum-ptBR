@@ -71,10 +71,10 @@ Todo o conteúdo dos livros é inserido manualmente a partir das edições ofici
 
 As métricas abaixo são baseadas em registros e IDs do Foundry, não no número de caracteres. Páginas longas e curtas possuem o mesmo peso.
 
-* **Core Rules:** atores, itens, pastas e cenas possuem cobertura avançada. 86 de 173 páginas de journals já receberam texto em PT-BR.
-* **Monster Codex:** itens, pastas e tabelas possuem tradução. 91 de 136 atores já tiveram nomes, campos da ficha e itens incorporados tratados quando existe correspondência oficial. As pastas Goblins, Humanos & Outros, Trolls e Hordas da Noite Eterna foram trabalhadas.
-* **Adventure Collection:** os 71 atores e seus itens incorporados possuem entradas em PT-BR. O conteúdo narrativo dos journals ainda está parcialmente em inglês.
-* **Game Master's Guide:** as 61 tabelas, seus 476 resultados e as 28 pastas foram traduzidos com os textos oficiais. Os atores de Blight Night, diversos itens incorporados e os artefatos trabalhados também possuem entradas em PT-BR.
+* **Core Rules:** os 71 atores, 643 itens, 51 pastas e 11 cenas possuem entradas de tradução. 88 de 173 páginas de journals já receberam texto em PT-BR.
+* **Monster Codex:** os 136 atores foram revisados, incluindo os campos das fichas e os itens incorporados com correspondência oficial. Os 42 itens, 24 pastas e 2 tabelas também possuem entradas de tradução.
+* **Adventure Collection:** os 71 atores possuem entradas em PT-BR. Os atores e itens incorporados das aventuras A1 a A4 foram revisados com os textos oficiais; itens equivalentes do Core Rules e do Monster Codex também foram aplicados às fichas das aventuras posteriores. O conteúdo narrativo dos journals permanece parcialmente em inglês.
+* **Game Master's Guide:** as 61 tabelas, seus 476 resultados e as 28 pastas foram traduzidos com os textos oficiais. Os 11 atores, 49 itens e 5 cenas também possuem entradas de tradução, incluindo Blight Night e os artefatos.
 * **Guia do Sistema:** o guia técnico original do sistema foi localizado em PT-BR por meio do Babele.
 * **Macros do Sistema:** as 10 macros em inglês receberam nomes, diálogos, avisos e mensagens em PT-BR sem modificar o código oficial do sistema.
 

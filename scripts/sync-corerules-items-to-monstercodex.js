@@ -165,6 +165,7 @@ function addCandidate(target, sourceName, translation, origin) {
 
 const topLevelItems = new Map();
 const actorItems = new Map();
+const monsterTopLevelItems = new Map();
 
 for (const [sourceName, translation] of Object.entries(coreEntry.items)) {
   addCandidate(topLevelItems, sourceName, translation, "items");
@@ -173,6 +174,9 @@ for (const [actorName, actor] of Object.entries(coreEntry.actors)) {
   for (const [sourceName, translation] of Object.entries(actor.items ?? {})) {
     addCandidate(actorItems, sourceName, translation, `actor:${actorName}`);
   }
+}
+for (const [sourceName, translation] of Object.entries(monsterEntry.items ?? {})) {
+  addCandidate(monsterTopLevelItems, sourceName, translation, "monster-items");
 }
 
 function findCandidateByOrigin(sourceName, origin) {
@@ -243,6 +247,20 @@ for (const [sourceName, [baseName, suffix]] of [
 }
 
 function resolveTranslation(sourceName) {
+  const exactMonsterTopLevel = monsterEntry.items?.[sourceName];
+  if (exactMonsterTopLevel) {
+    return {
+      candidate: {
+        sourceName,
+        translation: Object.fromEntries(
+          Object.entries(exactMonsterTopLevel).filter(([field]) => TRANSLATION_FIELDS.has(field))
+        ),
+        origin: "monster-items"
+      },
+      resolution: "monster-top-level-exact"
+    };
+  }
+
   const exactTopLevel = coreEntry.items[sourceName];
   if (exactTopLevel) {
     return {
@@ -259,6 +277,9 @@ function resolveTranslation(sourceName) {
 
   const key = normalize(sourceName);
   if (variantChoices.has(key)) return { candidate: variantChoices.get(key), resolution: "variant" };
+  const monsterTopLevel = monsterTopLevelItems.get(key) ?? [];
+  if (monsterTopLevel.length === 1) return { candidate: monsterTopLevel[0], resolution: "monster-top-level" };
+  if (monsterTopLevel.length > 1) return { candidate: null, resolution: "ambiguous" };
   const topLevel = topLevelItems.get(key) ?? [];
   if (topLevel.length === 1) return { candidate: topLevel[0], resolution: "top-level" };
   if (topLevel.length > 1) return { candidate: null, resolution: "ambiguous" };
@@ -289,9 +310,21 @@ const unresolvedNames = new Map();
 const updatedItems = [];
 const replacements = [];
 
+// Estes documentos têm o mesmo nome de uma variante do Core Rules, mas regras
+// próprias no Códice. As versões oficiais são aplicadas pelo script de
+// complementos e não devem ser sobrescritas por equivalência nominal.
+const preserveMonsterVariants = new Set([
+  "Nightmare\0Touch of Death",
+  "Wraith\0Touch of death"
+]);
+
 for (const [actorName, actor] of Object.entries(monsterEntry.actors)) {
   for (const [itemName, item] of Object.entries(actor.items ?? {})) {
     stats.total += 1;
+    if (preserveMonsterVariants.has(`${actorName}\0${itemName}`)) {
+      stats.unchanged += 1;
+      continue;
+    }
     const mappedIdSourceName = itemIdSourceNames.get(itemName);
     let matchedSourceName = mappedIdSourceName ?? itemName;
     let { candidate, resolution } = resolveTranslation(matchedSourceName);
