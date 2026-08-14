@@ -1,4 +1,4 @@
-const MODULE_ID = 'symbaroum-ptBR';
+const MODULE_ID = 'symbaroum-ptbr';
 const ARTIFACT_FOLDER_ID = 'zEQflLBX8HP2OV1U';
 
 const GMG_ARTIFACTS = [

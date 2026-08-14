@@ -1,4 +1,4 @@
-const MODULE_ID = 'symbaroum-ptBR';
+const MODULE_ID = 'symbaroum-ptbr';
 const MACRO_FOLDER_ID = '6oRNLitVbXIlSgly';
 const MACRO_FOLDER_EN = 'EN - Macros';
 const MACRO_FOLDER_PTBR = 'PT-BR - Macros';

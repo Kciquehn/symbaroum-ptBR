@@ -1,4 +1,4 @@
-const MODULE_ID = 'symbaroum-ptBR';
+const MODULE_ID = 'symbaroum-ptbr';
 const ARTIFACT_FOLDER_ID = 'zEQflLBX8HP2OV1U';
 const ARTIFACT_FOLDER_EN = 'Artifacts';
 const ARTIFACT_FOLDER_PTBR = 'Artefatos';

@@ -1,21 +1,11 @@
 {
   "label": "Guias do sistema Symbaroum",
-  "mapping": {
-    "journal": {
-      "pages": {
-        "path": "pages",
-        "mapping": {
-          "content": "text.content"
-        }
-      }
-    }
-  },
   "entries": {
     "Symbaroum System guide EN": {
       "pages": {
         "Symbaroum System guide EN": {
           "name": "Guia do Sistema Symbaroum",
-          "text": "<p>@RAW[modules/symbaroum-ptBR/templates/system-user-guide-ptBR.html]</p>"
+          "text": "<p>@RAW[modules/symbaroum-ptbr/templates/system-user-guide-ptBR.html]</p>"
         }
       }
     }

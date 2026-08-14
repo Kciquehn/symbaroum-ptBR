@@ -1,1 +1,49 @@
-/Livros em ptbr/
+# Release allowlist: ignore everything unless it is required at runtime.
+/*
+
+# Repository metadata and public documentation.
+!/.gitignore
+!/.gitattributes
+!/README.md
+
+# Foundry module entry points.
+!/module.json
+!/register.js
+
+# Babele translations.
+!/compendium/
+/compendium/*
+!/compendium/pt-BR/
+/compendium/pt-BR/*
+!/compendium/pt-BR/*.json
+
+# Runtime scripts imported by register.js.
+!/scripts/
+/scripts/*
+!/scripts/system-macros-ptbr.js
+!/scripts/gmg-tables-ptbr.js
+!/scripts/gmg-artifacts-ptbr.js
+!/scripts/gmg-artifact-items-ptbr.js
+!/scripts/scene-thumbnails-ptbr.js
+
+# Runtime template and referenced images.
+!/templates/
+/templates/*
+!/templates/system-user-guide-ptBR.html
+
+!/images/
+/images/*
+!/images/image (1).png
+!/images/image2.png
+!/images/image3.png
+!/images/image4.png
+!/images/image5.png
+!/images/image6.png
+!/images/image7.png
+!/images/image8.png
+!/images/image9.png
+!/images/image10.png
+!/images/karvosti-legend-ptbr.png
+!/images/thistle-hold-legend-ptbr.png
+!/images/timeline-ptbr.png
+!/images/yndaros-legend-ptbr.png

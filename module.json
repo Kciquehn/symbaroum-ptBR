@@ -1,16 +1,20 @@
 {
-  "id": "symbaroum-ptBR",
+  "id": "symbaroum-ptbr",
   "title": "Symbaroum — Tradução PT-BR",
-  "description": "<p>Tradução do jogo Symbaroum RPG do Foundry VTT para Português Brasileiro!</p>",
+  "description": "<p>Localização em português brasileiro do sistema Symbaroum e de seus módulos oficiais para o Foundry VTT, aplicada por meio do Babele.</p>",
   "authors": [
     {
-      "name": "Kciquehn, Arcani97",
+      "name": "Kciquehn",
       "discord": "kcirehn",
       "email": "erickhenriquehn1@gmail.com",
-      "flags": {}
+      "url": "https://github.com/Kciquehn"
+    },
+    {
+      "name": "Arcani97",
+      "discord": "Arcani97"
     }
   ],
-  "version": "1.0.18",
+  "version": "1.1.0",
   "compatibility": {
     "minimum": "13",
     "verified": "13.999"
@@ -40,7 +44,7 @@
     ]
   },
   "manifest": "https://raw.githubusercontent.com/Kciquehn/symbaroum-ptBR/main/module.json",
-  "download": "https://github.com/Kciquehn/symbaroum-ptBR/archive/refs/heads/main.zip",
+  "download": "https://github.com/Kciquehn/symbaroum-ptBR/releases/download/v1.1.0/symbaroum-ptbr-v1.1.0.zip",
   "url": "https://github.com/Kciquehn/symbaroum-ptBR",
   "readme": "README.md",
   "bugs": "https://github.com/Kciquehn/symbaroum-ptBR/issues",

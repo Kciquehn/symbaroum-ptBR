@@ -1,4 +1,4 @@
-const MODULE_ID = 'symbaroum-ptBR';
+const MODULE_ID = 'symbaroum-ptbr';
 
 const GMG_TABLE_FOLDERS = [
   ['hHwa7y1CaBkkO0fV', 'Symbaroum GMG - Tables', 'Symbaroum - Guia do Mestre - Tabelas'],

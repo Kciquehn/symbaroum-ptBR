@@ -54,14 +54,6 @@
 			"power4Description": "system.power.4.description",
 			"tradition": "system.tradition"
 		},
-		"journal": {
-			"pages": {
-				"path": "pages",
-				"mapping": {
-					"content": "text.content"
-				}
-			}
-		},
 		"scenes": {
 			"notes": {
 				"path": "notes",
@@ -85,7 +77,7 @@
 	"entries": {
 		"Symbaroum Game Masters Guide": {
 			"name": "Symbaroum Game Masters Guide",
-			"description": "<p><strong>Initialize Symbaroum RPG Game Masters Guide</strong><br />This will import all Actors, Items, Tables and Indexes into your world and organise them into folders.</p><p>Published by: <strong>Free League Publishing</strong> <a href=\"https://frialigan.se/\">Free League</a><br />Foundry Visualisation by <strong>Paul Watson</strong><br />Thanks for their help, support and system development to:<br /><strong>Peter Norell (Bithir) and Khaali</strong></p><p><span style=\"font-size:smaller\">No part of this publication may be reproduced, distributed, stored in a retrieval system, or transmitted in any form by any means, electronic, mechanical, photocopying, recording or otherwise without the prior permission of the publishers.</span></p>",
+			"description": "<p><strong>Inicializar o Guia do Mestre de Symbaroum RPG</strong><br />Isso importará todos os Atores, Itens, Tabelas e Índices para o seu mundo e os organizará em pastas.</p><p>Publicado por: <strong>Free League Publishing</strong> <a href=\"https://frialigan.se/\">Free League</a><br />Visualização no Foundry por <strong>Paul Watson</strong><br />Agradecimentos pela ajuda, apoio e desenvolvimento do sistema a:<br /><strong>Peter Norell (Bithir) e Khaali</strong></p><p><span style=\"font-size:smaller\">Nenhuma parte desta publicação pode ser reproduzida, distribuída, armazenada em um sistema de recuperação ou transmitida de qualquer forma ou por qualquer meio, eletrônico, mecânico, fotocópia, gravação ou outro, sem a autorização prévia dos editores.</span></p>",
 			"folders": {
 				"Blight Night Scenes": "Noite Maculada - Cenas",
 				"GM Aids": "Recursos do GM",
@@ -273,22 +265,22 @@
 					}
 				},
 				"Symbaroum GMG - Art": {
-					"name": "Symbaroum GMG - Art",
+					"name": "Symbaroum GMG - Arte",
 					"pages": {
 						"Sun Church and Iron Pack Meet": {
-							"name": "Sun Church and Iron Pack Meet",
+							"name": "Encontro entre a Igreja do Sol e o Pacto de Ferro",
 							"src": "modules/symbaroum-gmg/images/pictures/sunchurchironpack.webp"
 						},
 						"Expeditions in Davokar": {
-							"name": "Expeditions in Davokar",
+							"name": "Expedições na Davokar",
 							"src": "modules/symbaroum-gmg/images/pictures/gg_expeditions_in_davokar.webp"
 						},
 						"The Blessing Gong of Malikander": {
-							"name": "The Blessing Gong of Malikander",
+							"name": "O Gongo Abençoado de Malikander",
 							"src": "modules/symbaroum-gmg/images/journal/gongong.webp"
 						},
 						"The Guards": {
-							"name": "The Guards",
+							"name": "Os Guardas",
 							"src": "modules/symbaroum-gmg/images/pictures/the-guard.webp"
 						},
 						"Yndaros": {
@@ -296,180 +288,180 @@
 							"src": "modules/symbaroum-gmg/images/pictures/yndaros.webp"
 						},
 						"Ramarans Bane": {
-							"name": "Ramarans Bane",
+							"name": "Flagelo de Ramaran",
 							"src": "modules/symbaroum-gmg/images/pictures/ramarans-bane.webp"
 						},
 						"Thistle Hold, Haloban's Ring": {
-							"name": "Thistle Hold, Haloban's Ring",
+							"name": "Forte do Cardo, Anel de Haloban",
 							"src": "modules/symbaroum-gmg/images/pictures/thistle-hold-halobans-ring.webp"
 						},
 						"Forest Walkers": {
-							"name": "Forest Walkers",
+							"name": "Andarilhos da Floresta",
 							"src": "modules/symbaroum-gmg/images/pictures/forestwalkers.webp"
 						},
 						"Defeated": {
-							"name": "Defeated",
+							"name": "Derrotado",
 							"src": "modules/symbaroum-gmg/images/pictures/defeated.webp"
 						},
 						"Standard Bearer": {
-							"name": "Standard Bearer",
+							"name": "Porta-Estandarte",
 							"src": "modules/symbaroum-gmg/images/pictures/the-messenger.webp"
 						},
 						"Primal Blight Born": {
-							"name": "Primal Blight Born",
+							"name": "Nascido da Mácula Primordial",
 							"src": "modules/symbaroum-gmg/images/pictures/primalbb.webp"
 						},
 						"Artifact Find": {
-							"name": "Artifact Find",
+							"name": "Descoberta de Artefato",
 							"src": "modules/symbaroum-gmg/images/pictures/deep-exploration.webp"
 						},
 						"Karvosti, Forest Offering": {
-							"name": "Karvosti, Forest Offering",
+							"name": "Karvosti, Oferenda Florestal",
 							"src": "modules/symbaroum-gmg/images/pictures/karvosti-offering.webp"
 						},
 						"Poison Projectile Trap": {
-							"name": "Poison Projectile Trap",
+							"name": "Armadilha de Projétil Envenenado",
 							"src": "modules/symbaroum-gmg/images/journal/poison-projectile-trap.webp"
 						},
 						"Thistle Hold": {
-							"name": "Thistle Hold",
+							"name": "Forte do Cardo",
 							"src": "modules/symbaroum-gmg/images/pictures/gg_gamemaster_guidelines.webp"
 						},
 						"Fortress in the Titans": {
-							"name": "Fortress in the Titans",
+							"name": "Fortaleza nos Titãs",
 							"src": "modules/symbaroum-gmg/images/pictures/titan-fortress.webp"
 						},
 						"Doom Awaits": {
-							"name": "Doom Awaits",
+							"name": "A Ruína Aguarda",
 							"src": "modules/symbaroum-gmg/images/pictures/certain-death.webp"
 						},
 						"Impending Doom": {
-							"name": "Impending Doom",
+							"name": "Ruína Iminente",
 							"src": "modules/symbaroum-gmg/images/pictures/doomed.webp"
 						},
 						"Clan Warrior": {
-							"name": "Clan Warrior",
+							"name": "Guerreiro do Clã",
 							"src": "modules/symbaroum-gmg/images/pictures/clan-warrior.webp"
 						},
 						"Eli's Troll Flute": {
-							"name": "Eli's Troll Flute",
+							"name": "Flauta Troll de Eli",
 							"src": "modules/symbaroum-gmg/images/journal/trollflute.webp"
 						},
 						"Net Trap": {
-							"name": "Net Trap",
+							"name": "Armadilha de Rede",
 							"src": "modules/symbaroum-gmg/images/journal/net-trap.webp"
 						},
 						"The Entrance": {
-							"name": "The Entrance",
+							"name": "A Entrada",
 							"src": "modules/symbaroum-gmg/images/pictures/the-enterance.webp"
 						},
 						"The War Horn of the Stormhowler": {
-							"name": "The War Horn of the Stormhowler",
+							"name": "O Chifre de Guerra do Uivador da Tempestade",
 							"src": "modules/symbaroum-gmg/images/journal/warhorn.webp"
 						},
 						"Old Ruins": {
-							"name": "Old Ruins",
+							"name": "Ruínas Antigas",
 							"src": "modules/symbaroum-gmg/images/pictures/old-ruins.webp"
 						},
 						"Spiked Floor": {
-							"name": "Spiked Floor",
+							"name": "Piso com Espinhos",
 							"src": "modules/symbaroum-gmg/images/pictures/spiked-floor.webp"
 						},
 						"Ashiki’s Twin Blades": {
-							"name": "Ashiki’s Twin Blades",
+							"name": "Lâminas Gêmeas de Ashiki",
 							"src": "modules/symbaroum-gmg/images/journal/twinblades.webp"
 						},
 						"The Ceremony": {
-							"name": "The Ceremony",
+							"name": "A Cerimônia",
 							"src": "modules/symbaroum-gmg/images/pictures/the-ceremony.webp"
 						},
 						"Clan Chieftan": {
-							"name": "Clan Chieftan",
+							"name": "Chefe do Clã",
 							"src": "modules/symbaroum-gmg/images/pictures/clan-chieftain.webp"
 						},
 						"Leading the Troops": {
-							"name": "Leading the Troops",
+							"name": "Liderando as Tropas",
 							"src": "modules/symbaroum-gmg/images/pictures/leading-troops.webp"
 						},
 						"Worldcleaver": {
-							"name": "Worldcleaver",
+							"name": "Cortamundo",
 							"src": "modules/symbaroum-gmg/images/journal/worldcleaver.webp"
 						},
 						"GM Guide Cover": {
-							"name": "GM Guide Cover",
+							"name": "Capa do Guia do Mestre",
 							"src": "modules/symbaroum-gmg/images/pictures/gmg-cover-text.webp"
 						},
 						"Throne Room": {
-							"name": "Throne Room",
+							"name": "Sala do Trono",
 							"src": "modules/symbaroum-gmg/images/pictures/throne-room.webp"
 						},
 						"The Party": {
-							"name": "The Party",
+							"name": "O Grupo",
 							"src": "modules/symbaroum-gmg/images/pictures/hjaltar3.webp"
 						},
 						"Hafmuul's Transformation Garments": {
-							"name": "Hafmuul's Transformation Garments",
+							"name": "Vestes da Transformação de Hafmuul",
 							"src": "modules/symbaroum-gmg/images/journal/transformation-garment.webp"
 						},
 						"Blight Night": {
-							"name": "Blight Night",
+							"name": "Noite Maculada",
 							"src": "modules/symbaroum-gmg/images/pictures/gg_blight_night.webp"
 						},
 						"Yonderland": {
-							"name": "Yonderland",
+							"name": "Além-mundo",
 							"src": "modules/symbaroum-gmg/images/pictures/the-yonderworld.webp"
 						},
 						"Thistle Hold Skyline": {
-							"name": "Thistle Hold Skyline",
+							"name": "Panorama de Forte do Cardo",
 							"src": "modules/symbaroum-gmg/images/pictures/gg_world_of_symbaroum.webp"
 						},
 						"Thistle Hold, Eastern Gate": {
-							"name": "Thistle Hold, Eastern Gate",
+							"name": "Forte do Cardo, Portão Leste",
 							"src": "modules/symbaroum-gmg/images/pictures/thistle-hold-eastern-gate.webp"
 						},
 						"Ambrians Vs Clans": {
-							"name": "Ambrians Vs Clans",
+							"name": "Ambrianos contra os Clãs",
 							"src": "modules/symbaroum-gmg/images/pictures/ambriansvsclans.webp"
 						},
 						"GM Guide Cover (No Text)": {
-							"name": "GM Guide Cover (No Text)",
+							"name": "Capa do Guia do Mestre (sem texto)",
 							"src": "modules/symbaroum-gmg/images/pictures/gmg-cover-notext.webp"
 						},
 						"Conjuration": {
-							"name": "Conjuration",
+							"name": "Conjuração",
 							"src": "modules/symbaroum-gmg/images/pictures/conjuration.webp"
 						},
 						"Scout": {
-							"name": "Scout",
+							"name": "Batedor",
 							"src": "modules/symbaroum-gmg/images/pictures/scout.webp"
 						},
 						"Blight Born Aboar": {
-							"name": "Blight Born Aboar",
+							"name": "Gigavali Nascido da Mácula",
 							"src": "modules/symbaroum-gmg/images/pictures/blight-born-aboar.webp"
 						},
 						"Lightning Trap": {
-							"name": "Lightning Trap",
+							"name": "Armadilha de Relâmpago",
 							"src": "modules/symbaroum-gmg/images/journal/lighning-trap.webp"
 						},
 						"Giant Heads": {
-							"name": "Giant Heads",
+							"name": "Cabeças Gigantes",
 							"src": "modules/symbaroum-gmg/images/pictures/giantheads.webp"
 						}
 					}
 				},
 				"GM Guide - How To Use This Module": {
-					"name": "GM Guide - How To Use This Module",
+					"name": "Guia do Mestre - Como Usar este Módulo",
 					"pages": {
 						"GM Guide - How To Use This Module": {
-							"name": "GM Guide - How To Use This Module",
-							"text": "<div class=\"symbaroum-mod\"><div class=\"imagecontainer\"><img src=\"modules/symbaroum-gmg/images/journal/symbaroum_onelayer.webp\" style=\"height:127px;width:384px;border:0\" /></div><h4 class=\"centerHead\">Game Masters Guide</h4><p class=\"pblock\">Official system for playing Symbaroum RPG. <br /><br /></p><p>If you are new to the Symbaroum RPG system make sure you check out the @JournalEntry[Symbaroum System guide EN] Journal which can be found in Compendiums&gt;Symbaroum for FVTT system user guides. <br /><br /></p><p>All you need to run a game is imported and organised into folders for each of the asset types. <br />You can rerun the import script at any time by going to Configure Settings&gt; Module Settings and hitting the import button. Any existing assets will not be overwritten so it's useful if you accidentally delete something. <br /><br /><strong>NOTE:</strong><br />Future updates will alter the data in the folders described below but will not touch any folders or content you create outside of them. <br />To prevent losing any of your active scenario/world data is is advisable to duplicate any characters or creatures you are using and put them in your own folders. This will ensure they are not overwritten by the upgrade script. <br /><br /></p><h2 class=\"headng\" style=\"color:hsl(0, 100%, 50%)\">IMPORTANT !!!</h2><p class=\"pblock\">The Game Masters Guide contains many links to Journal entries, Actors and Assets from the <em><strong>Core Rules</strong></em> and <em><strong>Monster Codex</strong></em> modules. <br /><br />If you do not have those modules activated and the contents imported, some Journal Links will not respond and Actor/Item links will appear broken. <br /><br /></p><h2 class=\"headng2\"><span>Journals</span></h2><p>Under the <strong>\"Symbaroum GMG\"</strong> folder you will find the following Journals which contain the material for each of the main sections.</p><ul><li style=\"padding-bottom:2%\"><strong>Symbaroum GMG - Journals</strong> All the chapters from the book including the Blight Night scenario.</li><li style=\"padding-bottom:2%\"><strong>Symbaroum GMG - Art</strong> Images from the book to use during your adventures.</li></ul><h2 class=\"headng2\"><span>Actors</span></h2><p>The <strong>\"Symbaroum Core Rules - Actors\"</strong> folder has subfolders for Adversaries, Monsters, Mystical Power Familiars containing the people and creatures the PCs might meet during their journeys through Davokar. <br /><br />In the <strong>\"1. The Promised Land - Actors\"</strong> folder you will find the PCs and NPCs for The Promised Lands scenario which are set up as per the scenario with any necessary equipment, abilities, traits, etc. <br /><br /><strong>\"Symbaroum - APG - Actors\"</strong> contains templates for the creatures for the Thorn Beasties Elixir, and the Death Lord, Rune Guardian, Servant Daemon and Summon Daemon Rituals. <br /><br /></p><h2 class=\"headng2\"><span>Scenes</span></h2><p><strong>Blight Night Scenes</strong> has the maps as set out in the book for the scenario. <br /><br /><strong>GM Aids</strong> has two maps of Ambria and Davokar, one with coloured hexes and one without, as well as the Rules Cover and the Quick Guide for Combat. <br /><br />The Quick Guide for Combat is presented as a scene as it is the clearest way to present the information. <br />It is set to show on the navigation bar to all players allowing them to switch to it when they need to reference any information. <br /><br />Map pins have been added where applicable. Please note that some have blank journal entries because there are no descriptions in the book. <br /><br />As Symbaroum is mainly a \"Theatre of the Mind\" system, no walls have been added to the maps. <br /><br /></p><h2 class=\"headng2\"><span>Items</span></h2><p>GMG Items are organised into the Symbaroum - Items folder:</p><p>Under each of these folders the items types are organised into individual folders as follows:</p><ul><li>Artifacts</li><li>Boons/Burdens*</li><li>Equipment*</li><li>Greater Artifacts</li><li>Monstrous Traits</li><li>Mystical Ceremonies</li></ul><p>As the GM you may wish to give the players Observer permissions to some of the folders (suggested folders are marked above with an * ). <br /><br /></p><h2 class=\"headng2\"><span>Compendiums</span></h2><p>The Symbaroum modules now use the Foundry Adventure Import system, so there is only a single Compendium which contains all of the assets for the module. <br /><br />The import should have created folders for everything you need to run Symbaroum. <br /><br />You can rerun the import at any time by going to \"Configure Settings &gt; Module Settings\" and hitting the Re-import button. Re running the import will only replace missing content and will not overwrite anything. <br /><br /></p><h2 class=\"headng\"><span>Recommended Add-on Modules</span></h2><p>While not necessary to use the Symbaroum system or this module I would recommend installing the following Add-on modules as they make the GM's job a lot easier: <br /></p><ul><li style=\"padding-bottom:2%\"><p><strong>Dice So Nice:</strong> <br />Because it's awesome!</p></li><li style=\"padding-bottom:2%\"><p><strong>Token Action HUD:</strong> <br />Great tool for allowing rolls by just selecting the token and clicking on the HUD.</p></li><li style=\"padding-bottom:2%\"><p><strong>PnP - Pointer and Pings:</strong> <br />Useful for pointing things out to the players and pulling their map focus to where you want it.</p></li><li style=\"padding-bottom:2%\"><p><strong>Quick Insert - Search Widget:</strong> <br />Allows you to quickly search for assets and drag them directly on to the scene.</p></li></ul></div>"
+							"name": "Guia do Mestre - Como Usar este Módulo",
+							"text": "<div class=\"symbaroum-mod\"><div class=\"imagecontainer\"><img src=\"modules/symbaroum-gmg/images/journal/symbaroum_onelayer.webp\" style=\"height:127px;width:384px;border:0\" /></div><h4 class=\"centerHead\">Guia do Mestre</h4><p class=\"pblock\">Sistema oficial para jogar Symbaroum RPG.<br /><br /></p><p>Se você ainda não conhece o sistema Symbaroum RPG, consulte o Diário @JournalEntry[Symbaroum System guide EN], disponível em Compêndios &gt; Symbaroum &gt; Guias de uso do sistema para o Foundry VTT.</p><p>Tudo de que você precisa para conduzir uma partida é importado e organizado em pastas de acordo com o tipo de recurso. <br />Você pode executar novamente o script de importação a qualquer momento em Configurar Definições &gt; Definições de Módulo, pressionando o botão Reimportar. Os recursos existentes não serão sobrescritos, o que é útil caso você apague algo acidentalmente. <br /><br /><strong>OBSERVAÇÃO:</strong><br />Atualizações futuras alterarão os dados das pastas descritas abaixo, mas não afetarão pastas ou conteúdos que você criar fora delas. <br />Para evitar a perda de dados ativos de cenários ou mundos, duplique os personagens e criaturas que estiver usando e coloque-os em suas próprias pastas. Assim, eles não serão sobrescritos pelo script de atualização.</p><h2 class=\"headng\" style=\"color:hsl(0, 100%, 50%)\">IMPORTANTE!</h2><p class=\"pblock\">O Guia do Mestre contém muitos links para entradas de Diário, Atores e recursos dos módulos <em><strong>Regras Básicas</strong></em> e <em><strong>Códice de Monstros</strong></em>. <br /><br />Se esses módulos não estiverem ativados e seus conteúdos importados, alguns links de Diário não responderão e links de Atores ou Itens aparecerão quebrados.</p><h2 class=\"headng2\"><span>Diários</span></h2><p>Na pasta <strong>\"Symbaroum GMG\"</strong>, você encontrará os Diários das seções principais.</p><ul><li style=\"padding-bottom:2%\"><strong>Symbaroum GMG - Journals</strong> — todos os capítulos do livro, incluindo a aventura Noite Maculada.</li><li style=\"padding-bottom:2%\"><strong>Symbaroum GMG - Art</strong> — imagens do livro para usar durante suas aventuras.</li></ul><h2 class=\"headng2\"><span>Atores</span></h2><p>Os atores do Guia do Mestre são importados em pastas próprias, incluindo personagens e criaturas da aventura Noite Maculada. Eles já possuem os equipamentos, habilidades, poderes e traços necessários.</p><h2 class=\"headng2\"><span>Cenas</span></h2><p><strong>Cenas de Noite Maculada</strong> contém os mapas da aventura conforme apresentados no livro. <br /><br />Pins de mapa foram adicionados quando aplicável. Alguns possuem entradas de Diário vazias porque não há descrição correspondente no livro. <br /><br />Como Symbaroum é principalmente um sistema de teatro da mente, nenhuma parede foi adicionada aos mapas, salvo quando necessária para ocultar informações específicas do Foundry.</p><h2 class=\"headng2\"><span>Itens</span></h2><p>Os itens do Guia do Mestre são organizados na estrutura de pastas de itens de Symbaroum:</p><ul><li>Artefatos</li><li>Vantagens/Fardos*</li><li>Equipamentos*</li><li>Artefatos Maiores</li><li>Traços Monstruosos</li><li>Cerimônias Místicas</li></ul><p>Como Mestre de Jogo, você pode conceder aos jogadores permissão de Observador para algumas pastas; as sugestões estão marcadas acima com um asterisco.</p><h2 class=\"headng2\"><span>Compêndios</span></h2><p>Os módulos de Symbaroum agora utilizam o sistema de importação de Aventuras do Foundry, portanto existe apenas um Compêndio contendo todos os recursos do módulo. <br /><br />A importação deve ter criado as pastas necessárias para jogar Symbaroum. <br /><br />Você pode executá-la novamente a qualquer momento em Configurar Definições &gt; Definições de Módulo, pressionando o botão Reimportar. A reimportação substitui apenas o conteúdo ausente e não sobrescreve nada.</p><h2 class=\"headng\"><span>Módulos Adicionais Recomendados</span></h2><p>Embora não sejam necessários, Dice So Nice, Token Action HUD, PnP - Pointer and Pings e Quick Insert - Search Widget podem facilitar a condução das partidas, oferecendo dados visuais, ações rápidas de tokens, ponteiros no mapa e pesquisa ágil de recursos.</p></div>"
 						}
 					}
 				}
 			},
 			"scenes": {
 				"02-c - Ambria and Davokar (Plain Hex)": {
-					"name": "02-c - Ambria and Davokar (Plain Hex)",
+					"name": "02-c - Ambria e Davokar (Plano Hex)",
 					"notes": {
 						"Thistle Hold": "Forte do Cardo",
 						"Yndaros": "Yndaros",
@@ -480,7 +472,7 @@
 					"name": "Capa do Guia do Mestre"
 				},
 				"Quick Guide for Combat": {
-					"name": "Quick Guide for Combat"
+					"name": "Guia Rápido de Combate"
 				},
 				"Blight Night": {
 					"name": "Noite Maculada",
@@ -975,7 +967,7 @@
 							"description": "Um artefato da seção sobre artefatos (página 132)"
 						},
 						"xFiIjFH1kQGsUzQj": {
-							"name": "Table 33 - Artifacts"
+							"name": "Tabela 33 - Artefatos"
 						}
 					}
 				},
@@ -1191,10 +1183,10 @@
 							"name": "t69-10"
 						},
 						"N7iFjHBHdD3LlDXc": {
-							"name": "Table 33 - Artifacts"
+							"name": "Tabela 33 - Artefatos"
 						},
 						"pxwg20WDlDyTVkvl": {
-							"name": "Table 33 - Artifacts"
+							"name": "Tabela 33 - Artefatos"
 						}
 					}
 				},
@@ -1233,7 +1225,7 @@
 							"description": "<strong>Evento no Mundo Espiritual: </strong><br />Encontro com monstro (1D6)<br /><strong>O grupo encontra:</strong><br />"
 						},
 						"vRHGdRF6AjtxMTP8": {
-							"name": "Table 33 - Artifacts"
+							"name": "Tabela 33 - Artefatos"
 						},
 						"NkXQNobYxSnQxnIR": {
 							"name": "t710"
@@ -1539,13 +1531,13 @@
 							"description": "Detritos"
 						},
 						"6-15": {
-							"name": "Table 31 - Curiosities"
+							"name": "Tabela 31 - Curiosidades"
 						},
 						"16-19": {
-							"name": "Table 32 - Mystical Treasures"
+							"name": "Tabela 32 - Tesouros Místicos"
 						},
 						"20-20": {
-							"name": "Table 33 - Artifacts"
+							"name": "Tabela 33 - Artefatos"
 						}
 					}
 				},
@@ -1557,13 +1549,13 @@
 							"description": "Detritos"
 						},
 						"3-11": {
-							"name": "Table 31 - Curiosities"
+							"name": "Tabela 31 - Curiosidades"
 						},
 						"12-18": {
-							"name": "Table 32 - Mystical Treasures"
+							"name": "Tabela 32 - Tesouros Místicos"
 						},
 						"19-20": {
-							"name": "Table 33 - Artifacts"
+							"name": "Tabela 33 - Artefatos"
 						}
 					}
 				},
@@ -1575,13 +1567,13 @@
 							"description": "Detritos"
 						},
 						"5-13": {
-							"name": "Table 31 - Curiosities"
+							"name": "Tabela 31 - Curiosidades"
 						},
 						"14-18": {
-							"name": "Table 32 - Mystical Treasures"
+							"name": "Tabela 32 - Tesouros Místicos"
 						},
 						"19-20": {
-							"name": "Table 33 - Artifacts"
+							"name": "Tabela 33 - Artefatos"
 						}
 					}
 				},
@@ -2397,7 +2389,7 @@
 					"power0Name": "Buraco da Agulha",
 					"power0Description": "<p>A máscara funerária ajuda seu mestre a encontrar aberturas na armadura do inimigo. Ativar o poder reduz em 1d4 a Armadura de todos os inimigos contra ataques corpo a corpo, enquanto durar a cena de combate. Isto se aplica apenas ao mestre da máscara e não conta como dano extra — alvos sem armadura sofrem dano normal.</p>",
 					"power1Name": "Mil Agulhas",
-					"power1Description": "<p>Um mestre com a habilidade Maestria em Armas de Haste pode usar a máscara para paralisar inimigos com gritos cortantes. Todos os inimigos atingidos pela arma de haste do mestre devem passar em um Teste de Resoluto ou perdem sua próxima ação de combate (o mestre da máscara faz a rolagem).</p>"
+					"power1Description": "<p><strong>Corrupção:</strong> 1 por grito da máscara.</p>\n<p>Um mestre com a habilidade Maestria em Armas de Haste pode usar a máscara para paralisar inimigos com gritos cortantes. Todos os inimigos atingidos pela arma de haste do mestre devem passar em um Teste de Resoluto ou perdem sua próxima ação de combate (o mestre da máscara faz a rolagem).</p>"
 				},
 				"Desdemorgos Icosahedron": {
 					"name": "Icosaedro de Desdemorgos",
@@ -2405,7 +2397,7 @@
 					"power0Name": "Barreira de Corrupção",
 					"power0Description": "<p>O mestre do icosaedro ganha proteção completa contra a corrupção que atinge os que se movam através de certa área, por exemplo, na natureza corrompida do Além-mundo. Para corrupção usada como arma (ou seja, o traço Ataque Corruptivo ou o poder místico Sopro Sombrio), o mestre deve rolar o dano da corrupção em 1d20 — caso o resultado seja mais alto, a corrupção não tem efeito; caso o resultado seja igual ou menor, o mestre é afetado normalmente.<br /><br />A proteção não se aplica a fontes de corrupção que o mestre escolha usar, como vincular/usar artefatos ou ativar poderes místicos.</p>",
 					"power1Name": "Coletor de Corrupção",
-					"power1Description": "<p>Um mestre com a habilidade Feitiçaria pode absorver corrupção usada como arma e voltá-la contra seus inimigos. Para isto funcionar, o feiticeiro deve primeiro se proteger contra o ataque, veja Barreira de Corrupção — neste caso a corrupção é armazenada no artefato.<br /><br />O feiticeiro pode, então, gastar esta corrupção coletada para diminuir a resistência do inimigo aos próprios poderes: cada ponto gasto impõe ao alvo –1 a Resoluto quando defendendo contra o poder do mestre. Todos os pontos podem ser gastos no mesmo poder, mas metade da quantidade gasta (arredondada para cima) também aflige o feiticeiro na forma de corrupção temporária.<br /><br />A corrupção gerada pelo próprio mestre (através do uso de poderes etc.) não pode ser coletada desta forma, nem corrupção vinda do ambiente geral, como em natureza corrompida ou no Além-mundo.</p>"
+					"power1Description": "<p><strong>Corrupção:</strong> Nenhuma quando coleta corrupção; ao usar, o feiticeiro é afligido por metade da corrupção gasta.</p>\n<p>Um mestre com a habilidade Feitiçaria pode absorver corrupção usada como arma e voltá-la contra seus inimigos. Para isto funcionar, o feiticeiro deve primeiro se proteger contra o ataque, veja Barreira de Corrupção — neste caso a corrupção é armazenada no artefato.<br /><br />O feiticeiro pode, então, gastar esta corrupção coletada para diminuir a resistência do inimigo aos próprios poderes: cada ponto gasto impõe ao alvo –1 a Resoluto quando defendendo contra o poder do mestre. Todos os pontos podem ser gastos no mesmo poder, mas metade da quantidade gasta (arredondada para cima) também aflige o feiticeiro na forma de corrupção temporária.<br /><br />A corrupção gerada pelo próprio mestre (através do uso de poderes etc.) não pode ser coletada desta forma, nem corrupção vinda do ambiente geral, como em natureza corrompida ou no Além-mundo.</p>"
 				},
 				"Eli's Troll Flute": {
 					"name": "Flauta Troll de Eli",
@@ -2419,9 +2411,9 @@
 					"name": "Cristal da Rivalidade",
 					"description": "<p>O paranoico Alto Chefe Boherg convenceu sua Huldra Kthelba a imbuir este cristal com poder, para que o chefe pudesse vigiar seus muitos inimigos (reais e imaginários). O cristal da rivalidade posteriormente foi passado de Alto Chefe para Alto Chefe e, eventualmente, se perdeu no reinado do chefe Sotorek. É dito que a Huldra da época, Eaba, o pegou porque o Alto Chefe havia ficado tão obcecado com a pedra que não tomava nenhuma decisão e todo o resto estava sendo negligenciado. Seu paradeiro atual é desconhecido.</p>",
 					"power0Name": "Inimigos nas Muralhas",
-					"power0Description": "<p>Uma pessoa que se vincule ao cristal da rivalidade pode listar uma quantidade de inimigos igual a metade de seu Vigilante (arredondado para cima), e usar o cristal para ter uma ideia do quão distante eles estão. O mestre pode adicionar ou remover inimigos da lista, mas o número de nomes nunca pode exceder metade de seu Vigilante. Além disso, os inimigos devem ser de aparência conhecida e ter nomes; designações como ‘a mulher cinzenta’ ou ‘o troll caolho’ bastarão.<br /><br />O cristal da rivalidade mostra os inimigos listados em diferentes graus de foco, dependendo da proximidade física deles; um inimigo claro no cristal potencialmente está próximo o bastante para ser visto, mas está escondido, disfarçado ou sem ser notado de outra forma. O usuário possui duas chances de passar em qualquer Teste que busque encontrar tal inimigo próximo, seja por Testes de Vigilante ou ao ativar poderes ou habilidades de detecção.<br /><br />Um mestre atingido pela maldição de Sotorek (veja a corrupção do poder) deve adicionar outra pessoa como inimigo nomeado e acredita fortemente que todos na lista são igualmente ameaçadores. O novo inimigo se soma ao número de nomes igual a Vigilante/2. O Mestre de Jogo e os jogadores devem inventar juntos um inimigo falso interessante. O Mestre de Jogo também pode decidir que há de fato um inimigo escondido ou deixar que este vire um com o tempo, só para manter o jogador em um estado de insegurança... De qualquer forma, o personagem jogador está completamente convencido que a pessoa adicional possui uma disposição traiçoeira.</p>",
+					"power0Description": "<p><strong>Corrupção:</strong> 1D4, e 1/20 de chance de sofrer a maldição de Sotorek a cada uso.</p>\n<p>Uma pessoa que se vincule ao cristal da rivalidade pode listar uma quantidade de inimigos igual a metade de seu Vigilante (arredondado para cima), e usar o cristal para ter uma ideia do quão distante eles estão. O mestre pode adicionar ou remover inimigos da lista, mas o número de nomes nunca pode exceder metade de seu Vigilante. Além disso, os inimigos devem ser de aparência conhecida e ter nomes; designações como ‘a mulher cinzenta’ ou ‘o troll caolho’ bastarão.<br /><br />O cristal da rivalidade mostra os inimigos listados em diferentes graus de foco, dependendo da proximidade física deles; um inimigo claro no cristal potencialmente está próximo o bastante para ser visto, mas está escondido, disfarçado ou sem ser notado de outra forma. O usuário possui duas chances de passar em qualquer Teste que busque encontrar tal inimigo próximo, seja por Testes de Vigilante ou ao ativar poderes ou habilidades de detecção.<br /><br />Um mestre atingido pela maldição de Sotorek (veja a corrupção do poder) deve adicionar outra pessoa como inimigo nomeado e acredita fortemente que todos na lista são igualmente ameaçadores. O novo inimigo se soma ao número de nomes igual a Vigilante/2. O Mestre de Jogo e os jogadores devem inventar juntos um inimigo falso interessante. O Mestre de Jogo também pode decidir que há de fato um inimigo escondido ou deixar que este vire um com o tempo, só para manter o jogador em um estado de insegurança... De qualquer forma, o personagem jogador está completamente convencido que a pessoa adicional possui uma disposição traiçoeira.</p>",
 					"power1Name": "Olhar da Vingança",
-					"power1Description": "<p>Um mestre com a habilidade Sexto Sentido pode atacar inimigos claros no cristal (veja Inimigos nas Muralhas) como se estivessem bem na frente dele, com armas, poderes ou traços. O usuário não precisa encontrar ou ver o inimigo para fazer o ataque, que é feito e defendido normalmente.</p>"
+					"power1Description": "<p><strong>Corrupção:</strong> 1D4, e 1/10 de chance de sofrer a maldição de Sotorek a cada uso.</p>\n<p>Um mestre com a habilidade Sexto Sentido pode atacar inimigos claros no cristal (veja Inimigos nas Muralhas) como se estivessem bem na frente dele, com armas, poderes ou traços. O usuário não precisa encontrar ou ver o inimigo para fazer o ataque, que é feito e defendido normalmente.</p>"
 				},
 				"Fuglomaru's Liar Fire": {
 					"name": "Fogo da Mentira de Fuglomaru",
@@ -2447,9 +2439,9 @@
 					"name": "Arco da Vingança de Hadmandara",
 					"description": "<p>Um dos mais famosos caçadores da escuridão do Pacto de Ferro foi Hagmandara. Ele era mais conhecido por seu arco que odiava a corrupção e, de acordo com a lenda, nunca errava e sempre abatia seu alvo; o primeiro sendo um efeito da perícia do caçador e o segundo um pouco de exagero. Mas estava claro que os disparos brilhantes do arco acenderam a Davokar e queimaram muitas criaturas sombrias até as cinzas. Quando Hagmandara finalmente encontrou seu fim contra várias abominações primais, o arco passou para o Pacto de Ferro onde serviu muitos Jurados do Ferro ao longo dos séculos.<br /><br />Pessoas marcadas pela mácula não podem se vincular ao arco de Hagmandara; para tais indivíduos, ele é apenas um arco comum.</p>",
 					"power0Name": "Faísca na Escuridão",
-					"power0Description": "<p>O mestre da arma pode canalizar o ódio dela pela corrupção em projéteis e enviá-los ardendo contra criaturas corrompidas. Uma criatura atingida pela flecha deve rolar acima da sua corrupção com 1d6; caso falhe, a criatura imediatamente sofre a quantidade de dano indicado pelo dado. A Armadura pode proteger contra a flecha em si, mas não contra o dano extra. Note que o dano extra é causado mesmo se a flecha não perfurar a armadura; a luz ardente da flecha fere a vítima de qualquer forma.</p>",
+					"power0Description": "<p><strong>Corrupção:</strong> 1 por flecha.</p>\n<p>O mestre da arma pode canalizar o ódio dela pela corrupção em projéteis e enviá-los ardendo contra criaturas corrompidas. Uma criatura atingida pela flecha deve rolar acima da sua corrupção com 1d6; caso falhe, a criatura imediatamente sofre a quantidade de dano indicado pelo dado. A Armadura pode proteger contra a flecha em si, mas não contra o dano extra. Note que o dano extra é causado mesmo se a flecha não perfurar a armadura; a luz ardente da flecha fere a vítima de qualquer forma.</p>",
 					"power1Name": "Plumas Brilhantes",
-					"power1Description": "<p>Nas mãos de um mestre com a habilidade Atirador, as flechas não apenas causam dano extra (veja Faísca na Escuridão), mas também podem aprisionar completamente criaturas corrompidas. Uma criatura completamente corrompida acertada pela flecha deve passar em um Teste de Resoluto ou é presa em correntes de fogo, incapaz de se mover ou atacar por um turno; entretanto, ainda pode usar poderes e traços místicos.</p>"
+					"power1Description": "<p><strong>Corrupção:</strong> 1D4 por flecha, incluindo o efeito de Faísca na Escuridão.</p>\n<p>Nas mãos de um mestre com a habilidade Atirador, as flechas não apenas causam dano extra (veja Faísca na Escuridão), mas também podem aprisionar completamente criaturas corrompidas. Uma criatura completamente corrompida acertada pela flecha deve passar em um Teste de Resoluto ou é presa em correntes de fogo, incapaz de se mover ou atacar por um turno; entretanto, ainda pode usar poderes e traços místicos.</p>"
 				},
 				"Iloona's Mirror Shield": {
 					"name": "Escudo Espelhado de Iloona",
@@ -2481,23 +2473,23 @@
 					"power0Name": "Escudo da Alma",
 					"power0Description": "<p>O recipiente espiritual protege a alma do usuário contra corrupção e a morte do corpo físico dele. Qualquer corrupção recebida pelo mestre é atrelada às runas que cobrem a urna e nunca alcançam o espírito do mestre. O mesmo vale para os frios dedos da morte, que nunca tocarão o mestre — Testes de Morte são rolados normalmente, mas resultados que tragam a morte são ignorados.<br /><br />Caso o espírito do mestre deixe o recipiente (caso ele seja quebrado ou vinculado a outra pessoa), o espírito desprotegido é afetado por toda a corrupção presa pelas runas. Além disso, quaisquer mortes adiadas alcançam o mestre.</p>",
 					"power1Name": "Eco de Rasthuul",
-					"power1Description": "<p>O espírito de Rasthuul descansa de certa forma no recipiente que ele criou e o mestre sempre pode sentir se alguém está para pegar ou atacar o recipiente espiritual. O mestre pode, então, ativar este poder como uma reação, antes de qualquer um ter tempo de afetar o recipiente de qualquer forma.<br /><br />O poder faz duas coisas. Primeiro o recipiente espiritual emite uma onda de ódio que inflige 1d6 de dano (ignora Armadura) em todos dentro do campo de visão. Todos os presentes também devem passar em um Teste de Resoluto ou são derrubados.<br /><br />Além disso, o dono do recipiente é teleportado imediatamente para seu local e se manifesta a 1d6 metros do recipiente.</p>"
+					"power1Description": "<p><strong>Corrupção:</strong> 1D8, que é atrelada às runas da urna e não afeta o mestre até que o espírito dele saia do recipiente.</p>\n<p>O espírito de Rasthuul descansa de certa forma no recipiente que ele criou e o mestre sempre pode sentir se alguém está para pegar ou atacar o recipiente espiritual. O mestre pode, então, ativar este poder como uma reação, antes de qualquer um ter tempo de afetar o recipiente de qualquer forma.<br /><br />O poder faz duas coisas. Primeiro o recipiente espiritual emite uma onda de ódio que inflige 1d6 de dano (ignora Armadura) em todos dentro do campo de visão. Todos os presentes também devem passar em um Teste de Resoluto ou são derrubados.<br /><br />Além disso, o dono do recipiente é teleportado imediatamente para seu local e se manifesta a 1d6 metros do recipiente.</p>"
 				},
 				"Terrasma's Yondermirror": {
 					"name": "Espelho do Além de Terrasma",
 					"description": "<p>Terrasma era uma antiga exploradora de fronteiras mundanas e mortais (palavras mais chiques para ser uma Feiticeira). Através de cerimônias encontradas nas mais profundas criptas da Davokar, ela criou um espelho mágico para olhar ainda mais longe no véu do mundo.<br /><br />O espelho foi brevemente descrito pelo renomado feiticeiro Arao, um contemporâneo de Terrasma, como composto de vidro vulcânico, preto profundo e bem ruim como espelho. Mas aparentemente, seu poder era revelado aos que desenhassem símbolos profanos com o próprio sangue em sua superfície fria. O espelho é uma janela para o Além-mundo; ele foi criado com base nas teorias sobre o Tríptico de Katrandama (veja a página 32 do Guia Avançado do Jogador) e visto por Arao como uma evidência forte da veracidade desta visão de mundo pavorosa.<br /><br />Dizem que foi através do espelho que Terrasma conseguiu compreensões tão sombrias que ela rompeu com o caminho escuro em que estava e atualmente vive seus dias em um convento Manto Negro no leste das Titãs. Isto, é claro, pode ser uma mentira cautelosa espalhada pelos Mantos Negros para atrair feiticeiros de volta para a luz. Independentemente da verdade, a localização do Além-espelho é desconhecida; é possível que a própria Terrasma saiba onde está.</p>",
 					"power0Name": "Ver Além",
-					"power0Description": "<p>Uma pessoa vinculada ao espelho pode usá-lo para olhar para o Além-mundo. Qual informação é obtida disto depende inteiramente da situação no Além-mundo — isto é, quais daemones ou ruínas existem lá.<br /><br />O outro lado também pode olhar de volta. Role 1d20 a cada turno, se o resultado for igual ou menor que a quantidade de turnos gastos observando, o mestre é notado por algo do outro lado; o Mestre de Jogo decide o que.<br /><br />Uma versão pavorosa deste poder é representada ao se olhar para o mundo regular do Além-mundo; pode ser feita da mesma forma e com os mesmos riscos descritos acima.<br /><br />Os capazes de teleporte podem levar o espelho consigo para o Além-mundo. Você não pode entrar no espelho e levá-lo com você.</p>",
+					"power0Description": "<p><strong>Corrupção:</strong> 1D4 para a pessoa ativando o espelho, 1 de corrupção para qualquer outra pessoa que olhe nele.</p>\n<p>Uma pessoa vinculada ao espelho pode usá-lo para olhar para o Além-mundo. Qual informação é obtida disto depende inteiramente da situação no Além-mundo — isto é, quais daemones ou ruínas existem lá.<br /><br />O outro lado também pode olhar de volta. Role 1d20 a cada turno, se o resultado for igual ou menor que a quantidade de turnos gastos observando, o mestre é notado por algo do outro lado; o Mestre de Jogo decide o que.<br /><br />Uma versão pavorosa deste poder é representada ao se olhar para o mundo regular do Além-mundo; pode ser feita da mesma forma e com os mesmos riscos descritos acima.<br /><br />Os capazes de teleporte podem levar o espelho consigo para o Além-mundo. Você não pode entrar no espelho e levá-lo com você.</p>",
 					"power1Name": "Alcançar Além",
-					"power1Description": "<p>Um mestre com a habilidade Feitiçaria pode usar o espelho para influenciar o Além-mundo. É possível estender a mão deste mundo e agarrar algo lá, e é claro, usar poderes e habilidades em alvos no Além-mundo. Isto pode ser útil ao se lutar com criaturas capazes de teleportar, o que ocorre como movimentos através do Além-mundo.<br /><br />Enquanto o poder estiver ativo, pode-se entrar no espelho e deixar o mundo regular para trás. Isto é possível para qualquer um, não apenas o feiticeiro que o ativou. Para voltar para o mundo dos vivos, deve-se ser puxado de volta por pessoas no lado certo do espelho ou usar um poder para teleportar; dessa forma saltando de volta para o mundo regular e permanecendo nele. Uma pessoa pode compreender tudo isto com Mestre do Saber e sucesso em um Teste de Astuto.<br /><br />O outro lado também pode influenciar o mundo regular: role 1d20 a cada turno, caso o resultado seja igual ou menor que a quantidade de turnos que ela passou no outro lado, é criada uma natureza corrompida no local do espelho (veja o Códice de Monstros de Symbaroum, página 70).<br /><br />Outra possibilidade hedionda é sair do Além-mundo para o mundo regular; isto seria feito da mesma forma e com os mesmos riscos descritos acima. Qualquer natureza corrompida criada emerge no mundo dos vivos. Para fazer isso, deve-se teleportar (por exemplo com o poder Teleporte) ou ser teleportado (o poder Exorcizar) e trazer o espelho consigo para o Além-mundo; você não pode entrar no espelho e levá-lo junto.</p>"
+					"power1Description": "<p><strong>Corrupção:</strong> 1D4 para a pessoa ativando o poder, mais 1D6–3 de corrupção para cada cinco turnos que iniciam em contato com o Além-mundo. Esta última penalização aflige qualquer um que use o poder enquanto estiver ativo.</p>\n<p>Um mestre com a habilidade Feitiçaria pode usar o espelho para influenciar o Além-mundo. É possível estender a mão deste mundo e agarrar algo lá, e é claro, usar poderes e habilidades em alvos no Além-mundo. Isto pode ser útil ao se lutar com criaturas capazes de teleportar, o que ocorre como movimentos através do Além-mundo.<br /><br />Enquanto o poder estiver ativo, pode-se entrar no espelho e deixar o mundo regular para trás. Isto é possível para qualquer um, não apenas o feiticeiro que o ativou. Para voltar para o mundo dos vivos, deve-se ser puxado de volta por pessoas no lado certo do espelho ou usar um poder para teleportar; dessa forma saltando de volta para o mundo regular e permanecendo nele. Uma pessoa pode compreender tudo isto com Mestre do Saber e sucesso em um Teste de Astuto.<br /><br />O outro lado também pode influenciar o mundo regular: role 1d20 a cada turno, caso o resultado seja igual ou menor que a quantidade de turnos que ela passou no outro lado, é criada uma natureza corrompida no local do espelho (veja o Códice de Monstros de Symbaroum, página 70).<br /><br />Outra possibilidade hedionda é sair do Além-mundo para o mundo regular; isto seria feito da mesma forma e com os mesmos riscos descritos acima. Qualquer natureza corrompida criada emerge no mundo dos vivos. Para fazer isso, deve-se teleportar (por exemplo com o poder Teleporte) ou ser teleportado (o poder Exorcizar) e trazer o espelho consigo para o Além-mundo; você não pode entrar no espelho e levá-lo junto.</p>"
 				},
 				"The Blessing Gong of Malikander": {
 					"name": "O Gongo Abençoado de Malikander",
 					"description": "<p>O Arauto da Luz Malikander diz que seu gongo foi um presente de Prios, outra forma de dizer que foi criado em uma cerimônia poderosa durante a Grande Guerra, quando as cerimônias ainda eram consideradas uma forma aceitável de combater a escuridão.<br /><br />A criação do gongo foi um dos incidentes que fez a Rainha, o Grão-Mestre e o Primeiro Padre começarem a questionar a validade das cerimônias como armas contra as forças sombrias — o processo não apenas corrompeu a área onde o artefato foi forjado, como também espalhou a mácula por meio de uma chuva preta que caiu sobre Alberetor. Documentos contemporâneos sugerem que a maioria das pessoas assumiu que a chuva preta foi causada pelos Lordes Negros e nenhuma declaração oficial corrigiu esta ideia. Os que participaram da cerimônia também pereceram no calor da criação.<br /><br />O gongo é gravado com figuras minúsculas, de mãos dadas, cercadas por chamas que não parecem feri-las. Não há dúvida que Malikander pensou que o sacrifício foi válido; ele usou o gongo com sucesso contra as hordas das trevas, envolto em bandagens azuis-celestes banhadas em um bálsamo refrescante para diminuir a dor de suas queimaduras que nunca pareciam melhorar. Também há uma inscrição no gongo que diz: ‘Qualquer um que queira espalhar a luz deve suportar as chamas.’<br /><br />O gongo eventualmente caiu nas mãos do inimigo, quando o Arauto da Luz e seus guerreiros sagrados caíram em uma emboscada e foram todos mortos. Não se sabe para onde o gongo foi após isso.<br /><br />O gongo não pode ser vinculado a uma pessoa usando corrupção, apenas Experiência funcionará.</p>",
 					"power0Name": "Ritmo do Coração",
-					"power0Description": "<p>O poder brilhante do artefato é prejudicial para criaturas corrompidas. O poder necessita de três golpes do gongo para ativar (ações ativas) e afeta todos que o ouvem. Qualquer um com corrupção permanente deve rolar acima de sua corrupção permanente em 1d20; caso falhe, a criatura sofre sua corrupção permanente em dano na Vitalidade. O mestre do gongo é afetado também, assim como seus aliados.<br /><br />Criaturas completamente corrompidas fogem em vez disso, e não podem voltar ao local por um mês. Caso não possam escapar, elas são destruídas em uma cascata de luz.</p>",
+					"power0Description": "<p><strong>Ação:</strong> 3 ações ativas<br /><strong>Corrupção:</strong> Nenhuma, mas com risco de dano conforme a descrição do poder.</p>\n<p>O poder brilhante do artefato é prejudicial para criaturas corrompidas. O poder necessita de três golpes do gongo para ativar (ações ativas) e afeta todos que o ouvem. Qualquer um com corrupção permanente deve rolar acima de sua corrupção permanente em 1d20; caso falhe, a criatura sofre sua corrupção permanente em dano na Vitalidade. O mestre do gongo é afetado também, assim como seus aliados.<br /><br />Criaturas completamente corrompidas fogem em vez disso, e não podem voltar ao local por um mês. Caso não possam escapar, elas são destruídas em uma cascata de luz.</p>",
 					"power1Name": "Desfazer",
-					"power1Description": "<p>Nas mãos de um mestre com a habilidade Teurgia, o poder do gongo pode aniquilar uma coisa ou criatura dentro da área de audição. O mestre escolhe um alvo e acerta cinco vezes o gongo. Objetos inanimados são destruídos imediatamente, até o tamanho de portões, pilares e pontes; objetos maiores são danificados, mas não destruídos. Uma muralha não desaba, mas uma grande abertura é feita. Artefatos são imunes ao poder.<br /><br />Criaturas devem rolar acima de sua corrupção permanente em 1d20 ou serão aniquiladas; caso obtenham um sucesso, elas sofrem sua corrupção permanente em dano na Vitalidade, a menos que escolham correr. Neste caso, elas nunca mais podem voltar ao local. Caso o alvo seja uma criatura completamente corrompida, ela é aniquilada ao som do quinto golpe; caso seja rápida o bastante para fugir da área de audição, a criatura sobrevive.<br /><br />A cada golpe, o mestre sofre a sua corrupção permanente em dano à Vitalidade, o que significa que sofre cinco vezes a sua corrupção permanente para ativar o poder.</p>"
+					"power1Description": "<p><strong>Ação:</strong> 5 ações ativas<br /><strong>Corrupção:</strong> Nenhuma, mas com risco de dano conforme a descrição do poder.</p>\n<p>Nas mãos de um mestre com a habilidade Teurgia, o poder do gongo pode aniquilar uma coisa ou criatura dentro da área de audição. O mestre escolhe um alvo e acerta cinco vezes o gongo. Objetos inanimados são destruídos imediatamente, até o tamanho de portões, pilares e pontes; objetos maiores são danificados, mas não destruídos. Uma muralha não desaba, mas uma grande abertura é feita. Artefatos são imunes ao poder.<br /><br />Criaturas devem rolar acima de sua corrupção permanente em 1d20 ou serão aniquiladas; caso obtenham um sucesso, elas sofrem sua corrupção permanente em dano na Vitalidade, a menos que escolham correr. Neste caso, elas nunca mais podem voltar ao local. Caso o alvo seja uma criatura completamente corrompida, ela é aniquilada ao som do quinto golpe; caso seja rápida o bastante para fugir da área de audição, a criatura sobrevive.<br /><br />A cada golpe, o mestre sofre a sua corrupção permanente em dano à Vitalidade, o que significa que sofre cinco vezes a sua corrupção permanente para ativar o poder.</p>"
 				},
 				"The Cloak of the Sewer Queen": {
 					"name": "O Manto da Rainha do Esgoto",
@@ -2513,7 +2505,7 @@
 					"power0Name": "Ventos da Mudança",
 					"power0Description": "<p>Uma vez por turno, o mestre do olho de pedra pode afetar um Teste para uma ação sendo executada dentro do seu campo de visão; pode ser qualquer tipo de Teste: Teste de sucesso, Teste de efeito, Teste de morte etc., desde que a aleatoriedade seja parte do resultado. O poder dá 1d4 de modificador ao Teste da parte ativa, positivo ou negativo, conforme o desejo do mestre.</p>",
 					"power1Name": "Surto de Criação",
-					"power1Description": "<p>Mestres com a habilidade Alquimia, Criar Artefatos, ou Ferreiro podem usar o Olho de Pedra de Palamukk para criar algo imediatamente; a coisa aparece instantaneamente do próprio ar. Quanto ao Ferreiro, um adepto pode criar um item com uma qualidade normal, um mestre pode dar ao item duas qualidades, uma delas sendo mística.<br /><br />O item criado pode ser vestido, usado ou consumido com os mesmos efeitos da coisa real. Mas ele existe por apenas uma cena, antes de virar cinzas.<br /><br />Caso o criador esteja disposto a aceitar um ponto de corrupção permanente, o objeto se torna permanente. Consumíveis criados (como elixires) podem ser consumidos depois, mas serão gastos como quaisquer itens do tipo.</p>"
+					"power1Description": "<p><strong>Corrupção:</strong> 1D4 (objeto temporário), ou 1D4 incluindo 1 de corrupção permanente (objeto permanente).</p>\n<p>Mestres com a habilidade Alquimia, Criar Artefatos, ou Ferreiro podem usar o Olho de Pedra de Palamukk para criar algo imediatamente; a coisa aparece instantaneamente do próprio ar. Quanto ao Ferreiro, um adepto pode criar um item com uma qualidade normal, um mestre pode dar ao item duas qualidades, uma delas sendo mística.<br /><br />O item criado pode ser vestido, usado ou consumido com os mesmos efeitos da coisa real. Mas ele existe por apenas uma cena, antes de virar cinzas.<br /><br />Caso o criador esteja disposto a aceitar um ponto de corrupção permanente, o objeto se torna permanente. Consumíveis criados (como elixires) podem ser consumidos depois, mas serão gastos como quaisquer itens do tipo.</p>"
 				},
 				"The Lantern of Salamandra": {
 					"name": "A Lanterna da Salamandra",
@@ -2553,7 +2545,7 @@
 					"power0Name": "Sacrifício Voluntário",
 					"power0Description": "<p>Uma pessoa vinculada à pedra pode se sacrificar para trazer outra criatura de volta dos mortos. A pessoa fazendo o sacrifício derradeiro deve ser livre de corrupção, mas o ressuscitado não precisa ser. Entretanto, alguma parte do falecido — cinzas, um osso do dedo ou uma mecha de cabelo — deve ser colocada na pedra antes do sangue do sacrifício fluir sobre ela. O indivíduo ressuscitado se ergue lá imediatamente, como era antes de morrer. O corpo é curado de todos os ferimentos, mas retém a corrupção que tinha no momento da morte.</p>",
 					"power1Name": "Sacrifício Forçado",
-					"power1Description": "<p>Um mestre com a habilidade Feitiçaria pode sacrificar uma criatura cultural involuntária para trazer de volta dos mortos outro ser cultural. A ressurreição é, de resto, igual à de um sacrifício voluntário.</p>"
+					"power1Description": "<p><strong>Corrupção:</strong> 1D8, sendo 1 permanente.</p>\n<p>Um mestre com a habilidade Feitiçaria pode sacrificar uma criatura cultural involuntária para trazer de volta dos mortos outro ser cultural. A ressurreição é, de resto, igual à de um sacrifício voluntário.</p>"
 				},
 				"The War Horn of the Stormhowler": {
 					"name": "O Chifre de Guerra do Uivador da Tempestade",
@@ -2589,7 +2581,7 @@
 					"name": "Ampulheta de Xtala",
 					"description": "<p>Temida mesmo pelos symbarianos, a necromante Xtala supostamente podia parar o tempo e, na segurança da atemporalidade, agir de acordo com seus propósitos horríveis. As lendas dizem que um grande herói chamado Aktopo enganou Xtala para que usasse toda a areia em sua ampulheta e, como resultado, ela foi atingida por uma onda temporal que a reduziu a cinzas e pó. O herói pegou a ampulheta, virou e conseguiu parar o tempo como ela outrora fizera; pelo menos até que toda a areia corresse para a outra câmara da ampulheta. Aktopo era mais cauteloso do que a criadora da ampulheta e encontrou seu fim muito depois, nas mãos de seus inimigos. E assim a ampulheta foi perdida para o mundo.</p>",
 					"power0Name": "Areias do Tempo",
-					"power0Description": "<p>O mestre do artefato pode deixar a areia correr pela ampulheta e, assim, parar o tempo por uma quantidade de turnos. Durante estes turnos, o usuário pode agir sozinho e o efeito de todas as ações ocorrem quando o tempo voltar a se mover. Para cada turno que o mestre age fora do tempo, ele fica um ano mais velho. Além disso, o mestre deve rolar 1d20 a cada turno; caso o resultado seja igual ou menor que a quantidade de turnos que o mestre agiu fora do tempo ao longo da cena atual, o mestre cai morto no chão. Nenhuma rerrolagem é permitida; o tempo é impiedoso em sua vingança.</p>"
+					"power0Description": "<p><strong>Corrupção:</strong> 1D4 por turno fora do tempo.</p>\n<p>O mestre do artefato pode deixar a areia correr pela ampulheta e, assim, parar o tempo por uma quantidade de turnos. Durante estes turnos, o usuário pode agir sozinho e o efeito de todas as ações ocorrem quando o tempo voltar a se mover. Para cada turno que o mestre age fora do tempo, ele fica um ano mais velho. Além disso, o mestre deve rolar 1d20 a cada turno; caso o resultado seja igual ou menor que a quantidade de turnos que o mestre agiu fora do tempo ao longo da cena atual, o mestre cai morto no chão. Nenhuma rerrolagem é permitida; o tempo é impiedoso em sua vingança.</p>"
 				},
 				"Leap": {
 					"name": "Salto",
@@ -2607,6 +2599,7 @@
 			"actors": {
 				"Ashfaru, the Poison-Maker of Nightblade": {
 					"name": "Ashfaru, o Criador de Venenos de Lâmina Noturna",
+					"tokenName": "Ashfaru, o Criador de Venenos de Lâmina Noturna",
 					"race": "Humano (bárbaro)",
 					"items": {
 						"Bushcraft": {
@@ -2675,6 +2668,7 @@
 				},
 				"Nightblade, Robber Baron": {
 					"name": "Lâmina Noturna, baronesa ladina",
+					"tokenName": "Lâmina Noturna, baronesa ladina",
 					"race": "Humana (Ambriana)",
 					"items": {
 						"Privileged": {
@@ -2730,6 +2724,7 @@
 				},
 				"Shuggludd, rebellious goblin": {
 					"name": "Shuggludd, goblin rebelde",
+					"tokenName": "Shuggludd, goblin rebelde",
 					"race": "Goblin",
 					"items": {
 						"Bushcraft": {
@@ -2771,6 +2766,7 @@
 				},
 				"Varraguldru, Nightblade’s goblin tribe": {
 					"name": "Varraguldru, tribo goblin da Lâmina Noturna",
+					"tokenName": "Varraguldru, tribo goblin da Lâmina Noturna",
 					"race": "Goblin",
 					"items": {
 						"Bushcraft": {
@@ -2815,6 +2811,7 @@
 				},
 				"Corrupted Insect Swarm": {
 					"name": "Enxame de Insetos",
+					"tokenName": "Enxame de Insetos",
 					"items": {
 						"Corrupting Attack": {
 							"name": "Ataque Corruptivo",
@@ -2853,7 +2850,7 @@
 						},
 						"Stinger (piercing 5)": {
 							"name": "Ferrão (perfurante 5)",
-							"description": "<p>Ferrão 5 (+4 quando em Vantagem).</p>"
+							"description": "<p>Ferrão 0 (perfurante 5) e 1D4 de corrupção temporária.</p>"
 						},
 						"Thoroughly Corrupted": {
 							"name": "Completamente Corrompido",
@@ -2867,6 +2864,7 @@
 				},
 				"Sakofal the Slaughterer": {
 					"name": "Sakofal, o Matador",
+					"tokenName": "Sakofal, o Matador",
 					"items": {
 						"Robust(M)": {
 							"name": "Robusto (M)",
@@ -3000,6 +2998,7 @@
 				},
 				"Serala-Han Urel": {
 					"name": "Serala-Han Urel",
+					"tokenName": "Serala-Han Urel",
 					"items": {
 						"Corrupting Attack": {
 							"name": "Ataque Corruptivo",
@@ -3120,6 +3119,7 @@
 				},
 				"Uhux": {
 					"name": "Uhux",
+					"tokenName": "Uhux",
 					"items": {
 						"Armored": {
 							"name": "Armadurado",
@@ -3197,7 +3197,7 @@
 						},
 						"Iron Fist (Grand-Master)": {
 							"name": "Punho de Ferro (Grão-Mestre)",
-							"description": "<p> O personagem é treinado para utilizar sua força com efeito máximo em um alvo em combate corpo a corpo. Cavaleiros, membros da Guarda da Ira bárbara e outros guerreiros fortemente armados confiam em sua força em combate e deixam a precisão e sutileza para outros se preocuparem.</p>",
+							"description": "<p><strong>Nível Grão-Mestre:</strong> Com o nível grão-mestre de Punho de Ferro, Uhux causa 1D10 (+5) de dano em todos os seus ataques, como uma ação Passiva.</p><p>O personagem é treinado para utilizar sua força com efeito máximo em um alvo em combate corpo a corpo. Cavaleiros, membros da Guarda da Ira bárbara e outros guerreiros fortemente armados confiam em sua força em combate e deixam a precisão e sutileza para outros se preocuparem.</p>",
 							"noviceDescription": "<p>O personagem pode utilizar totalmente sua força, portanto utiliza Vigoroso em vez de Preciso quando realiza um ataque corpo a corpo.</p>",
 							"adeptDescription": "<p>Os ataques corpo a corpo do personagem agora causam +1D4 de dano adicional.</p>",
 							"masterDescription": "<p>O personagem sabe como realmente colocar sua força em um ataque. O personagem pode executar um ataque corpo a corpo devastador uma vez por turno que causa +1D8 em vez de +1D4 de dano adicional.</p>"
@@ -3241,6 +3241,7 @@
 				},
 				"Blackhawk, minstrel": {
 					"name": "Falcão Negro, menestrel",
+					"tokenName": "Falcão Negro, menestrel",
 					"race": "Humano",
 					"items": {
 						"Studded Leather": {
@@ -3269,6 +3270,7 @@
 				},
 				"Koldra, innkeeper": {
 					"name": "Koldra, estalajadeira",
+					"tokenName": "Koldra, estalajadeira",
 					"race": "Humana (Ambriana)",
 					"items": {
 						"Tactician": {
@@ -3338,6 +3340,7 @@
 				},
 				"Mangold, plant-loving house-ogre": {
 					"name": "Mangold, ogro doméstico amante das plantas",
+					"tokenName": "Mangold, ogro doméstico amante das plantas",
 					"race": "Ogro",
 					"items": {
 						"Iron Fist": {

@@ -5,14 +5,16 @@ import {
 import { localizeImportedGmgTableFolders } from './scripts/gmg-tables-ptbr.js';
 import { localizeImportedGmgArtifactFolder } from './scripts/gmg-artifacts-ptbr.js';
 import { localizeImportedGmgArtifactItems } from './scripts/gmg-artifact-items-ptbr.js';
+import { registerAdventureSceneThumbnailRepairHooks } from './scripts/scene-thumbnails-ptbr.js';
 
-const MODULE_ID = 'symbaroum-ptBR';
+const MODULE_ID = 'symbaroum-ptbr';
 const SYSTEM_GUIDE_ID = 'sSZzEbMgSLEclyBL';
 const SYSTEM_GUIDE_PAGE_ID = 'umdXR1sEdBrsqwkJ';
 const SYSTEM_GUIDE_PAGE_NAME = 'Guia do Sistema Symbaroum';
-const SYSTEM_GUIDE_CONTENT = '<p>@RAW[modules/symbaroum-ptBR/templates/system-user-guide-ptBR.html]</p>';
+const SYSTEM_GUIDE_CONTENT = '<p>@RAW[modules/symbaroum-ptbr/templates/system-user-guide-ptBR.html]</p>';
 
 registerSystemMacroLocalizationHooks();
+registerAdventureSceneThumbnailRepairHooks();
 
 Hooks.once('init', () => {
   game.settings.register(MODULE_ID, 'welcomeMessageShown', {
