@@ -486,6 +486,7 @@
           "items": {
             "Leather": {
               "name": "Couro",
+              "cost": "2 táleres",
               "description": "<p><strong>ARMADURA LEVE</strong> <br /><strong>Armadura: </strong>1D4 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;2). Muitos tipos de armaduras leves têm a qualidade Flexível, e armadura de Pele de Lobo tem a qualidade Desajeitada. </p>\n<hr />\n<p> Armaduras leves são fáceis de vestir e não limitam substancialmente as capacidades do usuário em situações acrobáticas ou quando executa manobras furtivamente. Porém, ainda têm um efeito negativo quando se usa poderes místicos. Couro batido, malha e couro enrijecido são exemplos de armaduras leves. </P> "
             },
             "Sword": {
@@ -566,10 +567,12 @@
           "items": {
             "Studded Leather": {
               "name": "Couro Batido",
+              "cost": "2 táleres",
               "description": "<p><strong>ARMADURA LEVE</strong> <br /><strong>Armadura: </strong>1D4 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;2). Muitos tipos de armaduras leves têm a qualidade Flexível, e armadura de Pele de Lobo tem a qualidade Desajeitada. </p>\n<hr />\n<p> Armaduras leves são fáceis de vestir e não limitam substancialmente as capacidades do usuário em situações acrobáticas ou quando executa manobras furtivamente. Porém, ainda têm um efeito negativo quando se usa poderes místicos. Couro batido, malha e couro enrijecido são exemplos de armaduras leves.</P>"
             },
             "Spiked club": {
               "name": "Clava com Cravos",
+              "cost": "5 táleres",
               "description": "<p><strong>ARMAS DE UMA MÃO</strong> <br /><strong>Dano: </strong> 1D8 <br /><strong>Qualidades: </strong> Nenhuma. Um Bico de Corvo tem a qualidade Impacto Profundo, uma Espada de Duelo é Precisa e um Mangual é Articulado.</p>\n<hr />\n<p>A categoria de armas de Uma Mão engloba todos os tipos de armas que podem ser empunhadas em uma mão. Espada, machado, martelo de guerra e sabre são exemplos de armas de Uma Mão.</p>"
             },
             "Throwing knife": {
@@ -649,10 +652,12 @@
 },
 "Wooden Club": {
 "name": "Clava",
+"cost": "5 táleres",
 "description": "<p><strong>ARMAS DE UMA MÃO</strong> <br /><strong>Dano: </strong> 1D8 <br /><strong>Qualidades: </strong> Nenhuma. Um Bico de Corvo tem a qualidade Impacto Profundo, uma Espada de Duelo é Precisa e um Mangual é Articulado.</p>\n<hr />\n<p>A categoria de armas de Uma Mão engloba todos os tipos de armas que podem ser empunhadas em uma mão. Espada, machado, martelo de guerra e sabre são exemplos de armas de Uma Mão.</p>"
 },
 "Leather Apron": {
 "name": "Avental de Couro",
+"cost": "2 táleres",
 "description": "<p><strong>ARMADURA LEVE</strong> <br /><strong>Armadura: </strong>1D4 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;2). Muitos tipos de armaduras leves têm a qualidade Flexível, e armadura de Pele de Lobo tem a qualidade Desajeitada. </p>\n<hr />\n<p> Armaduras leves são fáceis de vestir e não limitam substancialmente as capacidades do usuário em situações acrobáticas ou quando executa manobras furtivamente. Porém, ainda têm um efeito negativo quando se usa poderes místicos. Couro batido, malha e couro enrijecido são exemplos de armaduras leves. </P> "
 },
 "Flute": {
@@ -708,6 +713,7 @@
             },
             "Double Axe": {
               "name": "Machado Duplo",
+              "cost": "50 táleres",
               "description": "<p><strong>ARMAS PESADAS</strong><br /><strong>Dano: </strong>1D10 <br /><strong>Qualidades: </strong>Nenhuma. A Espada Bastarda é Precisa, o Machado Duplo tem a qualidade Impacto Profundo, e o Mangual Pesado é Articulado. </p>\n<hr />\n<p>Armas Pesadas são distintas pelo fato de que devem ser empunhados com duas mãos para serem usados efetivamente. Elas têm um efeito de dano superior em combate corpo a corpo. A acha-de-armas, o martelo de batalha e a poderosa espada larga são exemplos de armas Pesadas comuns na região da Davokar.</p>"
             },
             "Scalemail": {
@@ -765,10 +771,12 @@
             },
             "Leather": {
               "name": "Couro",
+              "cost": "2 táleres",
               "description": "<p><strong>ARMADURA LEVE</strong> <br /><strong>Armadura: </strong>1D4 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;2). Muitos tipos de armaduras leves têm a qualidade Flexível, e armadura de Pele de Lobo tem a qualidade Desajeitada. </p>\n<hr />\n<p> Armaduras leves são fáceis de vestir e não limitam substancialmente as capacidades do usuário em situações acrobáticas ou quando executa manobras furtivamente. Porém, ainda têm um efeito negativo quando se usa poderes místicos. Couro batido, malha e couro enrijecido são exemplos de armaduras leves. </P> "
             },
             "Two Handed Hammer": {
               "name": "Martelo de Duas Mãos",
+              "cost": "10 táleres",
               "description": "<p><strong>ARMAS PESADAS</strong><br /><strong>Dano: </strong>1D10 <br /><strong>Qualidades: </strong>Nenhuma. A Espada Bastarda é Precisa, o Machado Duplo tem a qualidade Impacto Profundo, e o Mangual Pesado é Articulado. </p>\n<hr />\n<p>Armas Pesadas são distintas pelo fato de que devem ser empunhados com duas mãos para serem usados efetivamente. Elas têm um efeito de dano superior em combate corpo a corpo. A acha-de-armas, o martelo de batalha e a poderosa espada larga são exemplos de armas Pesadas comuns na região da Davokar.</p>"
             },
             "Sack": {
@@ -946,7 +954,7 @@
               "cost": "2 táleres"
             },
             "Belt pouch": {
-              "name": "Bolsa de Moedas",
+              "name": "Algibeira",
               "cost": "5 ortegas"
             },
             "Bushcraft": {
@@ -1022,6 +1030,7 @@
 },
 "Chainmail": {
 "name": "Cota de Malha",
+"cost": "5 táleres",
 "description": "<p><strong>ARMADURA MÉDIA</strong> <br /><strong>Armadura: </strong> 1D6 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;3). Algumas têm a qualidade Flexível, e a Armadura de Corvo tem a qualidade Desajeitada.</p>\n<hr />\n<p>Armaduras médias oferecem proteções melhores que as versões leves, mas ao custo de serem mais restritivas aos movimentos do usuário. Esta restrição é considerada aceitável pela maioria dos combatentes corpo a corpo. Brunea e cota de malha são exemplos de armaduras médias. </P>"
 },
 "Book of Prayers": {
@@ -1074,6 +1083,7 @@
 },
 "Throwing Spear": {
 "name": "Lança de Arremesso",
+"cost": "3 táleres",
 "description": "<p><strong>ARMAS LONGAS </strong><br /><strong>Dano: </strong>1D8 <br /><strong>Qualidades: </strong>Longa. A Alabarda tem Impacto Profundo, o Pique é Preciso e o Bordão é Contundente. </p>\n<hr />\n<p>Armas Longas têm a vantagem de alcance superior e dão ao usuário Ataques Livres contra inimigos que não estão armados com armas Longas. Uma arma Longa pode ser utilizada com uma mão, mas perdem a qualidade Longa, já que o usuário é forçado a segurar mais alto na empunhadura para controlar a arma. Lança e cajado são exemplos de armas Longas.</p>"
 },
 "Bear Pelt": {
@@ -1564,6 +1574,7 @@
 },
 "Leather Apron": {
 "name": "Avental de Couro",
+"cost": "2 táleres",
 "description": "<p><strong>ARMADURA LEVE</strong> <br /><strong>Armadura: </strong>1D4 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;2). Muitos tipos de armaduras leves têm a qualidade Flexível, e armadura de Pele de Lobo tem a qualidade Desajeitada. </p>\n<hr />\n<p> Armaduras leves são fáceis de vestir e não limitam substancialmente as capacidades do usuário em situações acrobáticas ou quando executa manobras furtivamente. Porém, ainda têm um efeito negativo quando se usa poderes místicos. Couro batido, malha e couro enrijecido são exemplos de armaduras leves. </P> "
 },
 "Thoroughly Corrupted": {
@@ -2991,6 +3002,7 @@
             },
             "Leather Armor": {
               "name": "Armadura de Couro",
+              "cost": "2 táleres",
               "description": "<p><strong>ARMADURA LEVE</strong> <br /><strong>Armadura: </strong>1D4 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;2). Muitos tipos de armaduras leves têm a qualidade Flexível, e armadura de Pele de Lobo tem a qualidade Desajeitada. </p>\n<hr />\n<p> Armaduras leves são fáceis de vestir e não limitam substancialmente as capacidades do usuário em situações acrobáticas ou quando executa manobras furtivamente. Porém, ainda têm um efeito negativo quando se usa poderes místicos. Couro batido, malha e couro enrijecido são exemplos de armaduras leves. </P> "
             },
             "Bushcraft": {
@@ -3040,10 +3052,12 @@
             },
             "Spiked club": {
               "name": "Clava com Cravos",
+              "cost": "5 táleres",
               "description": "<p><strong>ARMAS DE UMA MÃO</strong> <br /><strong>Dano: </strong> 1D8 <br /><strong>Qualidades: </strong> Nenhuma. Um Bico de Corvo tem a qualidade Impacto Profundo, uma Espada de Duelo é Precisa e um Mangual é Articulado.</p>\n<hr />\n<p>A categoria de armas de Uma Mão engloba todos os tipos de armas que podem ser empunhadas em uma mão. Espada, machado, martelo de guerra e sabre são exemplos de armas de Uma Mão.</p>"
             },
             "Fortified Chainmail": {
               "name": "Cota de malha fortificada",
+              "cost": "10 táleres",
               "description": "<p><strong>ARMADURA MÉDIA</strong> <br /><strong>Armadura: </strong> 1D6 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;3). Algumas têm a qualidade Flexível, e a Armadura de Corvo tem a qualidade Desajeitada.</p>\n<hr />\n<p>Armaduras médias oferecem proteções melhores que as versões leves, mas ao custo de serem mais restritivas aos movimentos do usuário. Esta restrição é considerada aceitável pela maioria dos combatentes corpo a corpo. Brunea e cota de malha são exemplos de armaduras médias. </P>"
             },
             "Long-Lived": {
@@ -3073,6 +3087,7 @@
 "items": {
 "Leather Cuirass": {
 "name": "Couraçado",
+"cost": "2 táleres",
 "description": "<p><strong>ARMADURA LEVE</strong> <br /><strong>Armadura: </strong>1D4 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;2). Muitos tipos de armaduras leves têm a qualidade Flexível, e armadura de Pele de Lobo tem a qualidade Desajeitada. </p>\n<hr />\n<p> Armaduras leves são fáceis de vestir e não limitam substancialmente as capacidades do usuário em situações acrobáticas ou quando executa manobras furtivamente. Porém, ainda têm um efeito negativo quando se usa poderes místicos. Couro batido, malha e couro enrijecido são exemplos de armaduras leves. </P> "
 },
 "Crossbow": {
@@ -3198,6 +3213,7 @@
             },
             "Blessed Warhammer": {
               "name": "Martelo de Guerra Abençoado",
+              "cost": "5 táleres",
               "description": "<p><strong>ARMAS PESADAS</strong><br /><strong>Dano: </strong>1D10 <br /><strong>Qualidades: </strong>Nenhuma. A Espada Bastarda é Precisa, o Machado Duplo tem a qualidade Impacto Profundo, e o Mangual Pesado é Articulado. </p>\n<hr />\n<p>Armas Pesadas são distintas pelo fato de que devem ser empunhados com duas mãos para serem usados efetivamente. Elas têm um efeito de dano superior em combate corpo a corpo. A acha-de-armas, o martelo de batalha e a poderosa espada larga são exemplos de armas Pesadas comuns na região da Davokar.</p>"
             },
             "Shield": {
@@ -3277,6 +3293,7 @@
             },
             "Walking Staff": {
               "name": "Bordão",
+              "cost": "1 xelim",
               "description": "<p>O mais simples bordão, frequentemente feito de madeira que foi endurecida com fogo, tem o alcance de uma arma Longa, mas não tem o efeito de armas com ponta de ferro.</p>"
             },
             "Blessed Robe": {
@@ -3352,6 +3369,7 @@
             },
             "Leather Gown": {
               "name": "Couro enrijecido",
+              "cost": "2 táleres",
               "description": "<p><strong>ARMADURA LEVE</strong> <br /><strong>Armadura: </strong>1D4 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;2). Muitos tipos de armaduras leves têm a qualidade Flexível, e armadura de Pele de Lobo tem a qualidade Desajeitada. </p>\n<hr />\n<p> Armaduras leves são fáceis de vestir e não limitam substancialmente as capacidades do usuário em situações acrobáticas ou quando executa manobras furtivamente. Porém, ainda têm um efeito negativo quando se usa poderes místicos. Couro batido, malha e couro enrijecido são exemplos de armaduras leves. </P> "
             },
             "Dagger": {
@@ -3361,6 +3379,7 @@
             },
             "Spear": {
               "name": "Lança",
+              "cost": "3 táleres",
               "description": "<p><strong>ARMAS LONGAS </strong><br /><strong>Dano: </strong>1D8 <br /><strong>Qualidades: </strong>Longa. A Alabarda tem Impacto Profundo, o Pique é Preciso e o Bordão é Contundente. </p>\n<hr />\n<p>Armas Longas têm a vantagem de alcance superior e dão ao usuário Ataques Livres contra inimigos que não estão armados com armas Longas. Uma arma Longa pode ser utilizada com uma mão, mas perdem a qualidade Longa, já que o usuário é forçado a segurar mais alto na empunhadura para controlar a arma. Lança e cajado são exemplos de armas Longas.</p>"
             },
             "Pariah": {
@@ -3427,6 +3446,7 @@
             },
             "Hardened Leather": {
               "name": "Couro enrijecido",
+              "cost": "2 táleres",
               "description": "<p><strong>ARMADURA LEVE</strong> <br /><strong>Armadura: </strong>1D4 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;2). Muitos tipos de armaduras leves têm a qualidade Flexível, e armadura de Pele de Lobo tem a qualidade Desajeitada. </p>\n<hr />\n<p> Armaduras leves são fáceis de vestir e não limitam substancialmente as capacidades do usuário em situações acrobáticas ou quando executa manobras furtivamente. Porém, ainda têm um efeito negativo quando se usa poderes místicos. Couro batido, malha e couro enrijecido são exemplos de armaduras leves. </P> "
             },
             "Field equipment": {
@@ -3655,10 +3675,12 @@
             },
             "Walking Staff": {
               "name": "Bordão",
+              "cost": "1 xelim",
               "description": "<p>O mais simples bordão, frequentemente feito de madeira que foi endurecida com fogo, tem o alcance de uma arma Longa, mas não tem o efeito de armas com ponta de ferro.</p>"
             },
             "Studded Leather": {
               "name": "Corselete de Couro Batido",
+              "cost": "2 táleres",
               "description": "<p><strong>ARMADURA LEVE</strong> <br /><strong>Armadura: </strong>1D4 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;2). Muitos tipos de armaduras leves têm a qualidade Flexível, e armadura de Pele de Lobo tem a qualidade Desajeitada. </p>\n<hr />\n<p> Armaduras leves são fáceis de vestir e não limitam substancialmente as capacidades do usuário em situações acrobáticas ou quando executa manobras furtivamente. Porém, ainda têm um efeito negativo quando se usa poderes místicos. Couro batido, malha e couro enrijecido são exemplos de armaduras leves. </P> "
             },
             "Field equipment": {
@@ -3725,10 +3747,12 @@
             },
             "Two-handed Sword": {
               "name": "Espada Bastarda, duas mãos",
+              "cost": "50 táleres",
               "description": "<p>Os mestres ferreiros dos Pansars forjam as melhores armas de Ambria, e as espadas bastardas da Guarda da Rainha atestam esse fato, pelo menos quando empunhadas pelos guerreiros certos.</p> <p>A arma é preferencialmente empunhada com ambas as mãos (como uma arma Pesada), mas também pode ser utilizada com uma mão e um escudo. Quando empunhada com apenas uma mão, a espada bastarda perde a qualidade Precisa e causa dano como uma arma de uma mão.</p>"
             },
             "Fortified Chainmail": {
               "name": "Cota de malha fortificada",
+              "cost": "10 táleres",
               "description": "<p><strong>ARMADURA MÉDIA</strong> <br /><strong>Armadura: </strong> 1D6 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;3). Algumas têm a qualidade Flexível, e a Armadura de Corvo tem a qualidade Desajeitada.</p>\n<hr />\n<p>Armaduras médias oferecem proteções melhores que as versões leves, mas ao custo de serem mais restritivas aos movimentos do usuário. Esta restrição é considerada aceitável pela maioria dos combatentes corpo a corpo. Brunea e cota de malha são exemplos de armaduras médias. </P>"
             },
             "Field equipment": {
@@ -3741,7 +3765,7 @@
               "cost": "5 xelins"
             },
             "Belt pouch": {
-              "name": "Bolsa de Moedas",
+              "name": "Algibeira",
               "cost": "5 ortegas",
               "description": "<p>Com solo da residência da família no sul.</p>"
             },
@@ -3795,6 +3819,7 @@
             },
             "Leather Apron": {
               "name": "Avental de Couro",
+              "cost": "2 táleres",
               "description": "<p><strong>ARMADURA LEVE</strong> <br /><strong>Armadura: </strong>1D4 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;2). Muitos tipos de armaduras leves têm a qualidade Flexível, e armadura de Pele de Lobo tem a qualidade Desajeitada. </p>\n<hr />\n<p> Armaduras leves são fáceis de vestir e não limitam substancialmente as capacidades do usuário em situações acrobáticas ou quando executa manobras furtivamente. Porém, ainda têm um efeito negativo quando se usa poderes místicos. Couro batido, malha e couro enrijecido são exemplos de armaduras leves. </P> "
             },
             "Flute": {
@@ -3840,10 +3865,12 @@
 },
 "Rusty Sword": {
 "name": "Espada Enferrujada",
+"cost": "5 táleres",
 "description": "<p><strong>ARMAS DE UMA MÃO</strong> <br /><strong>Dano: </strong> 1D8 <br /><strong>Qualidades: </strong> Nenhuma. Um Bico de Corvo tem a qualidade Impacto Profundo, uma Espada de Duelo é Precisa e um Mangual é Articulado.</p>\n<hr />\n<p>A categoria de armas de Uma Mão engloba todos os tipos de armas que podem ser empunhadas em uma mão. Espada, machado, martelo de guerra e sabre são exemplos de armas de Uma Mão.</p>"
 },
 "Studded Leather": {
 "name": "Couro Batido",
+"cost": "2 táleres",
 "description": "<p><strong>ARMADURA LEVE</strong> <br /><strong>Armadura: </strong>1D4 <br /><strong>Qualidades: </strong> Obstrutiva(&minus;2). Muitos tipos de armaduras leves têm a qualidade Flexível, e armadura de Pele de Lobo tem a qualidade Desajeitada. </p>\n<hr />\n<p> Armaduras leves são fáceis de vestir e não limitam substancialmente as capacidades do usuário em situações acrobáticas ou quando executa manobras furtivamente. Porém, ainda têm um efeito negativo quando se usa poderes místicos. Couro batido, malha e couro enrijecido são exemplos de armaduras leves. </P> "
 },
 "No Pain": {
@@ -5543,7 +5570,7 @@
           "cost": "5 ortegas"
         },
         "Belt pouch": {
-          "name": "Bolsa de Moedas",
+          "name": "Algibeira",
           "cost": "5 ortegas"
         },
         "Blanket": {
@@ -5674,8 +5701,8 @@
           "cost": "1 xelim"
         },
         "Knapsack": {
-"name": "Mochila",
-"cost": "1 táler"
+          "name": "Saco de Alpinista",
+          "cost": "1 xelim"
         },
         "Ladder": {
           "name": "Escada",
@@ -7206,6 +7233,7 @@
         },
         "Spiked club": {
           "name": "Clava com Cravos",
+          "cost": "5 táleres",
           "description": "<p><strong>ARMAS DE UMA MÃO</strong> <br /><strong>Dano: </strong> 1D8 <br /><strong>Qualidades: </strong> Nenhuma. Um Bico de Corvo tem a qualidade Impacto Profundo, uma Espada de Duelo é Precisa e um Mangual é Articulado.</p>\n<hr />\n<p>A categoria de armas de Uma Mão engloba todos os tipos de armas que podem ser empunhadas em uma mão. Espada, machado, martelo de guerra e sabre são exemplos de armas de Uma Mão.</p>"
         },
         "Steel shield": {
