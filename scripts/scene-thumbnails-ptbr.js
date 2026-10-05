@@ -1,4 +1,4 @@
-const MODULE_ID = 'symbaroum-ptbr';
+﻿const MODULE_ID = 'symbaroum-ptbr';
 const OFFICIAL_SCENE_IMAGE = /^modules\/(?:symbaroum-adventure-collection|symbaroum-corerules|symbaroum-gmg|symbaroum-monstercodex)\//i;
 
 function getWorldThumbnailOwner(thumb) {
@@ -52,14 +52,14 @@ function collectImportedScenes(created, updated) {
 
 export function registerAdventureSceneThumbnailRepairHooks() {
   Hooks.on('importAdventure', async (_adventure, _options, created, updated) => {
-    if (!game.user.isGM) return;
+    if (game.users.activeGM?.id !== game.user.id) return;
 
     const scenes = collectImportedScenes(created, updated);
     await repairSceneThumbnails(scenes);
   });
 
   Hooks.once('ready', async () => {
-    if (!game.user.isGM) return;
+    if (game.users.activeGM?.id !== game.user.id) return;
 
     const responsibleGM = game.users.find((user) => user.active && user.isGM);
     if (responsibleGM?.id !== game.user.id) return;
