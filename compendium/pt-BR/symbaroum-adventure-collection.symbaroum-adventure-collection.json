@@ -1,4 +1,4 @@
-{
+﻿{
   "label": "Symbaroum - Coletânea de Aventuras",
   "mapping": {
     "actors": {
@@ -58,7 +58,7 @@
   "folders": {},
   "entries": {
     "Symbaroum Adventure Collection": {
-      "name": "Symbaroum - Coletânea de Aventuras",
+      "name": "Symbaroum Adventure Collection",
       "description": "<p><strong>Inicializar a Coletânea de Aventuras de Symbaroum RPG</strong><br />Isso importará todos os Diários e Cenas para o seu mundo e os organizará em pastas.</p><ul><li><p><strong>6 Aventuras Lendárias:</strong></p><ul><li>A Marca da Besta</li><li>O Túmulo dos Sonhos Moribundos</li><li>Febre da Caçada</li><li>O Lamento do Sino de Kastor</li><li>The Howling of Dammed Gods</li><li>What's Bred in the Bone</li></ul></li></ul><p>Publicado por: <strong>Free League Publishing</strong> <a href=\"https://frialigan.se/\">Free League</a><br />Visualização no Foundry por <strong>Paul Watson</strong><br />Agradecimentos pela ajuda, apoio e desenvolvimento do sistema a:<br /><strong>Peter Norell (Bithir) e Khaali</strong><br /><br /><span style=\"font-size:smaller\">Nenhuma parte desta publicação pode ser reproduzida, distribuída, armazenada em um sistema de recuperação ou transmitida de qualquer forma ou por qualquer meio, eletrônico, mecânico, fotocópia, gravação ou outro, sem a autorização prévia dos editores.</span></p>",
       "scenes": {
         "AKAUDOa7Gq4qRqnM": {

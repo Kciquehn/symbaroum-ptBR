@@ -1,4 +1,4 @@
-{
+﻿{
   "id": "symbaroum-ptbr",
   "title": "Symbaroum — Tradução PT-BR",
   "description": "<p>Localização em português brasileiro do sistema Symbaroum e de seus módulos oficiais para o Foundry VTT, aplicada por meio do Babele.</p>",
@@ -14,7 +14,7 @@
       "discord": "Arcani97"
     }
   ],
-  "version": "1.1.1",
+  "version": "1.1.2",
   "compatibility": {
     "minimum": "13",
     "verified": "13.999"

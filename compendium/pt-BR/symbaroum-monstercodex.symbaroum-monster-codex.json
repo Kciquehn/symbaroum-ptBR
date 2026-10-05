@@ -1,4 +1,4 @@
-{
+﻿{
 	"label": "Symbaroum RPG - Códice de Monstros",
 	"mapping": {
 		"actors": {
@@ -57,7 +57,7 @@
 	},
 	"entries": {
 		"Symbaroum Monster Codex": {
-			"name": "Symbaroum Códice de Monstros",
+			"name": "Symbaroum Monster Codex",
 			"description": "<p><strong>Inicializar o Códice de Monstros de Symbaroum RPG</strong><br />Isso importará todos os Atores, Itens, Tabelas e Índices para o seu mundo e os organizará em pastas.</p><p>Publicado por: <strong>Free League Publishing</strong> <a href=\"https://frialigan.se/\">Free League</a><br />Visualização no Foundry por <strong>Paul Watson</strong><br />Agradecimentos pela ajuda, apoio e desenvolvimento do sistema a:<br /><strong>Peter Norell (Bithir) e Khaali</strong><br />Traduzido por: <strong>Erick Henrique (Kciquehn) e Alexandre Fonseca (Arcani97)</strong><br /><br /></p><p><span style=\"font-size:smaller\">Nenhuma parte desta publicação pode ser reproduzida, distribuída, armazenada em um sistema de recuperação ou transmitida de qualquer forma ou por qualquer meio, eletrônico, mecânico, fotocópia, gravação ou outro, sem a autorização prévia dos editores.</span></p>",
 			"folders": {
 				"Symbaroum - Tables": "Symbaroum - Tabelas",
