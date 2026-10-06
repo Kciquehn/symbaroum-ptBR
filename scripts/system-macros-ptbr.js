@@ -158,6 +158,11 @@ function localizeChatMessage(_message, html) {
 function translateNotification(message) {
   if (typeof message !== 'string') return message;
 
+  const leading = message.match(/^\s*/)?.[0] ?? '';
+  const trailing = message.match(/\s*$/)?.[0] ?? '';
+  const trimmed = message.trim();
+  if (!trimmed) return message;
+
   const exact = new Map([
     ['No actor available for you to add exp to', 'Nenhum ator disponível para receber experiência'],
     ['No actor available for you to do an attribute test', 'Nenhum ator disponível para realizar um teste de atributo'],
@@ -165,37 +170,96 @@ function translateNotification(message) {
     ['Please select a token first', 'Selecione um token primeiro'],
     ['Need a valid number of players', 'Selecione ao menos um jogador'],
     ['Could not fetch supplemental name data', 'Não foi possível carregar os dados adicionais de nomes']
-  ]).get(message);
-  if (exact) return exact;
+  ]).get(trimmed);
+  if (exact) return `${leading}${exact}${trailing}`;
 
-  return message
+  const replaced = trimmed
     .replace(/^Could not find actor with name (.+)\. Try again$/, 'Não foi possível encontrar o ator chamado $1. Tente novamente.')
     .replace(/^Actor with name (.+) is now a monster\.$/, 'O ator $1 agora é um monstro.')
     .replace(/^Actor with name (.+) is now a player\.$/, 'O ator $1 agora é um personagem jogador.')
     .replace(/^(.+) takes (.+) damage to (.+)\.$/, '$1 sofre $2 de dano em $3.');
+
+  return `${leading}${replaced}${trailing}`;
 }
 
-function wrapNotifications() {
-  if (!isPtBr() || !ui.notifications || ui.notifications._symbaroumPtBrWrapped) return;
+let isTranslatingNotification = false;
 
-  for (const method of ['info', 'warn', 'error']) {
-    const original = ui.notifications[method];
-    if (typeof original !== 'function') continue;
-    ui.notifications[method] = function (message, ...args) {
-      return original.call(this, translateNotification(message), ...args);
-    };
+function translateNotificationNode(node) {
+  if (!isPtBr() || !node || isTranslatingNotification) return;
+
+  isTranslatingNotification = true;
+  try {
+    if (node.nodeType === Node.TEXT_NODE) {
+      if (node.parentElement?.classList?.contains('crlngn-origin')) return;
+      const original = node.nodeValue;
+      const translated = translateNotification(original);
+      if (translated !== original) node.nodeValue = translated;
+      return;
+    }
+
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      if (node.classList?.contains('crlngn-origin')) return;
+      const walker = node.ownerDocument?.createTreeWalker(node, NodeFilter.SHOW_TEXT);
+      if (!walker) return;
+      let current;
+      while ((current = walker.nextNode())) {
+        if (current.parentElement?.classList?.contains('crlngn-origin')) continue;
+        const original = current.nodeValue;
+        const translated = translateNotification(original);
+        if (translated !== original) current.nodeValue = translated;
+      }
+    }
+  } finally {
+    isTranslatingNotification = false;
+  }
+}
+
+function observeNotifications() {
+  if (!isPtBr()) return;
+
+  const setupObserver = (container) => {
+    if (!container || container._symbaroumPtBrObserved) return;
+    container._symbaroumPtBrObserved = true;
+
+    for (const child of container.children) {
+      translateNotificationNode(child);
+    }
+
+    const observer = new MutationObserver((mutations) => {
+      for (const mutation of mutations) {
+        if (mutation.type === 'characterData') {
+          translateNotificationNode(mutation.target);
+        } else {
+          for (const added of mutation.addedNodes) {
+            translateNotificationNode(added);
+          }
+        }
+      }
+    });
+
+    observer.observe(container, { childList: true, subtree: true, characterData: true });
+  };
+
+  const container = document.getElementById('notifications');
+  if (container) {
+    setupObserver(container);
+    return;
   }
 
-  Object.defineProperty(ui.notifications, '_symbaroumPtBrWrapped', {
-    value: true,
-    configurable: true
+  const bodyObserver = new MutationObserver(() => {
+    const el = document.getElementById('notifications');
+    if (el) {
+      bodyObserver.disconnect();
+      setupObserver(el);
+    }
   });
+  bodyObserver.observe(document.body, { childList: true, subtree: true });
 }
 
 export function registerSystemMacroLocalizationHooks() {
   Hooks.on('renderDialog', localizeDialog);
   Hooks.on('renderChatMessageHTML', localizeChatMessage);
-  Hooks.once('ready', wrapNotifications);
+  Hooks.once('ready', observeNotifications);
 }
 
 export async function localizeImportedSystemMacros() {
